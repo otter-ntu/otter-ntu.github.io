@@ -1,0 +1,187 @@
+//
+// cards
+//
+
+.card {
+  @include transition;
+  color: inherit;
+
+  > .card-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+  }
+
+  .equal,
+  .background {
+    z-index: 0;
+  }
+
+  &.bg-opaque-white {
+    background: rgba($white, 0.4) !important;
+  }
+
+  [class*="language-"] {
+    max-height: 25vh;
+  }
+}
+
+.card-title {
+  @include font-size(1.5rem);
+  position: relative;
+  display: block;
+  color: inherit;
+
+  > * {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    font-size: inherit;
+  }
+}
+
+// card hover actions
+//
+.card:hover {
+  z-index: 4;
+}
+
+// card decorations
+.card-arrow {
+  .card-header,
+  .card-footer,
+  .card-body {
+    padding-right: rem(64);
+  }
+
+  &.equal {
+    padding-right: 0;
+
+    .card-wrap {
+      padding-right: rem(56);
+    }
+  }
+
+  &::after {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: rem(40);
+    bottom: rem(40);
+    display: inline-block;
+    vertical-align: middle;
+    font-family: bootstrap-icons;
+    font-size: rem(24);
+    line-height: 1em;
+    z-index: 4;
+    color: inherit;
+    content: "\f123";
+  }
+
+  &:not(.card-hover-arrow):hover {
+    &::after {
+      right: rem(32);
+      bottom: rem(32);
+    }
+  }
+}
+
+// card hover effects
+.card-hover-reveal {
+  overflow: hidden;
+
+  > * {
+    z-index: 4;
+  }
+
+  .background {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  &:hover {
+    color: $white;
+
+    .background {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.card-hover-arrow {
+  &::after {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-hover-gradient {
+  transition: background-color 0.2s ease-in-out;
+  background-color: $black;
+
+  .background {
+    mask-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0.4))
+    );
+  }
+
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.card-hover-rise {
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $box-shadow;
+  }
+}
+
+.card-hover-image-rise {
+  &:hover {
+    .card-img-top {
+      transform: translateY(-8px);
+      box-shadow: $box-shadow !important;
+    }
+  }
+}
+
+.card-hover-border:hover,
+.card-hover-border:active {
+  box-shadow: 0 0 0 $border-width currentColor;
+}
+
+.card-img-top {
+  @include transition;
+}
+
+// accordion inside card
+.card .accordion-classic {
+  border: 0;
+
+  .accordion-item {
+    .accordion-button {
+      padding: rem(32) rem(56) rem(32) rem(32);
+
+      &::after {
+        right: rem(24);
+      }
+    }
+
+    .accordion-body {
+      padding: 0 rem(56) rem(32) rem(32);
+    }
+  }
+}

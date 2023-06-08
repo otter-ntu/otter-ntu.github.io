@@ -1,0 +1,36 @@
+//
+// product
+//
+
+.product-image {
+  position: relative;
+  margin-bottom: rem(12);
+
+  img {
+    max-width: 100%;
+  }
+
+  &:hover {
+    img + img {
+      opacity: 1;
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+  }
+
+  img + img {
+    @include transition;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+.product-title {
+  display: flex;
+  color: $black;
+}

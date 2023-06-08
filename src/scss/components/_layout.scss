@@ -1,0 +1,159 @@
+//
+// global
+//
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  position: relative;
+}
+
+// fluid container
+.container-fluid {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.foreground {
+  position: relative;
+  z-index: 12;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  width: auto;
+
+  @include media-breakpoint-down(lg) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba($black, 0.5);
+      z-index: 4;
+    }
+  }
+
+  &.back-static {
+    @include media-breakpoint-down(lg) {
+      position: static;
+      height: 50vh;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.sticky {
+  z-index: 12;
+}
+
+.bg-color {
+  @include transition(0.8s);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg-color-active {
+  .bg-color {
+    opacity: 1;
+  }
+}
+
+// overlay
+.bottom-overlap {
+  margin-bottom: rem(-120);
+}
+
+.showcase {
+  position: relative;
+  transform-origin: bottom left;
+
+  > .row {
+    position: absolute;
+    opacity: 0.5;
+  }
+}
+
+.level-1 {
+  position: relative;
+  z-index: 32 !important;
+}
+
+.level-2 {
+  position: relative;
+  z-index: 16 !important;
+}
+
+.level-3 {
+  position: relative;
+  z-index: 8 !important;
+}
+
+// split
+.split {
+  background: $gray-100;
+}
+
+.split-sidebar {
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    padding-top: rem(200);
+
+    &::after {
+      position: absolute;
+      right: $grid-gutter-width / 2;
+      top: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: $border-width;
+      background: $border-color;
+    }
+  }
+}
+
+.split-content {
+  padding-top: rem(160);
+  padding-bottom: rem(160);
+  padding-left: $grid-gutter-width;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: rem(200);
+  }
+
+  section:not(:first-child) {
+    margin-top: rem(64);
+  }
+}
+
+// separted
+%separated {
+  > * {
+    margin-top: -$border-width;
+    margin-left: -$border-width;
+    border: $border-width solid $border-color;
+  }
+}
+
+.separated {
+  @extend %separated;
+}

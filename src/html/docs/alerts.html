@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Alerts - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="alerts"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Alerts</h1>
+              <p class="lead text-secondary">Provide contextual feedback messages for typical user actions with the
+                handful of available and flexible alert messages.</p>
+              <a href="https://getbootstrap.com/docs/5.0/components/alerts/" class="underline action">Bootstrap
+                documentation <i class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <section>
+              <h3 class="fs-4">Example</h3>
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                  </div>
+                  <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                  </div>
+                  <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
+                      bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                    <hr>
+                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                    </p>
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                  </div>
+                  <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <i class="bi bi-exclamation-diamond-fill"></i>
+                    <div>
+                      An example alert with an icon
+                    </div>
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                  </div>
+                  <div class="alert alert-light" role="alert">
+                    A simple light alert—check it out!
+                  </div>
+                  <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <i class="bi bi-x alert-close" data-bs-dismiss="alert" aria-label="Close"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

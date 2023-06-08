@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Shadows - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="btn-primary"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="utilities"
+            active="shadows"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Shadows</h1>
+              <p class="lead text-secondary">Add or remove shadows to elements with box-shadow utilities.</p>
+            </section>
+
+
+            <!-- example -->
+            <section>
+              <h3 class="fs-4">Example</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white overflow-hidden">
+                  <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                  <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+                  <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+                  <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+                    <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+                    <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

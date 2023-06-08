@@ -1,0 +1,174 @@
+//
+// navbar
+//
+
+.navbar {
+  padding: rem(32) 0;
+}
+
+.navbar-sticky {
+  transform: translateY(0%);
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  opacity: 1;
+  z-index: 1040;
+}
+
+// header interaction
+.headroom--unpinned,
+.offcanvas-push {
+  .navbar-sticky {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.headroom--not-top {
+  .navbar-sticky {
+    padding: rem(16) 0;
+
+    &.navbar-dark {
+      background: $black;
+    }
+
+    &.navbar-light {
+      background: $white;
+    }
+  }
+}
+
+// dark
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+      text-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+// light
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $black;
+    }
+  }
+}
+
+// uncolapsed on small screen
+.navbar-active {
+  .navbar-dark {
+    background: $black;
+  }
+
+  .navbar-light {
+    background: $white;
+  }
+}
+
+// navbar navigation
+.navbar-nav {
+  margin-top: rem(16);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+
+  .nav-link {
+    @include nofocus;
+    @include media-breakpoint-up(lg) {
+      padding-left: rem(16) !important;
+      padding-right: rem(16) !important;
+    }
+  }
+
+  .nav-icon {
+    @include nofocus;
+    display: flex;
+    width: rem(48);
+    height: rem(48);
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(20);
+
+    .bi-list {
+      font-size: rem(22);
+      margin-top: 2px;
+    }
+  }
+}
+
+.navbar-nav-secondary {
+  margin-top: 0;
+  flex-direction: row;
+  align-items: center;
+
+  @include media-breakpoint-down(lg) {
+    .nav-link {
+      padding-left: rem(16);
+      padding-right: rem(16);
+    }
+  }
+}
+
+.account-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+// brand
+.navbar-brand {
+  img {
+    width: auto;
+    max-height: rem(40);
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0;
+  }
+}
+
+// button
+.navbar-dark {
+  .btn-outline-white {
+    border-color: rgba($white, 0.25);
+  }
+}
+
+.navbar-light {
+  .navbar-menu {
+    .nav-link {
+      color: $black;
+      border-color: $border-color;
+
+      &:hover,
+      &[aria-expanded="true"] {
+        background: $border-color;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.navbar-active {
+  overflow: hidden;
+
+  .navbar {
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
+  &.headroom--unpinned {
+    .navbar-sticky {
+      padding: rem(32) 0;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

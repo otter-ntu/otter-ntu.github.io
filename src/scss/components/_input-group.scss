@@ -1,0 +1,27 @@
+//
+// input-group
+//
+
+.grouped-inputs {
+  transition: all 0.3s ease-in-out;
+  border-radius: rem(40) !important;
+
+  &.focused {
+    border-color: var(--bs-primary) !important;
+  }
+
+  .form-control,
+  .form-select {
+    border-color: transparent;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .form-select {
+    background-position: right rem(28) center;
+  }
+}

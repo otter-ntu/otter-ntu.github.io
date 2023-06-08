@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Job Listing"}}
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-light.svg"
+  class="navbar-sticky navbar-dark"
+  active="job-board"
+  button="btn-outline-white"
+  }}
+
+
+  <!-- header -->
+  <section class="bg-black overflow-hidden" data-aos="fade-in">
+    <div class="d-flex flex-column py-15 min-vh-100 container foreground">
+      <div class="row justify-content-center my-auto pb-5">
+        <div class="col-lg-6 text-center mb-5">
+          <h1 class="display-2 fw-bold text-white">Find your dream job with us.</h1>
+        </div>
+        <div class="col-lg-8">
+          <div class="grouped-inputs p-1 rounded-pill bg-white">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <select class="form-select form-select-lg px-4" aria-label="Default select example">
+                  <option selected>Design</option>
+                  <option value="1">Development</option>
+                  <option value="2">Marketing</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-lg px-4"
+                  aria-label="Text input with dropdown button" placeholder="Desired position">
+              </div>
+              <div class="col-md-3 d-grid">
+                <a href="" class="btn btn-primary btn-lg rounded-pill">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center inverted">
+        <div class="col-lg-8 text-center">
+          <span class="text-muted">Trusted by worlds biggest brands</span>
+          <div class="carousel carousel-align text-center mt-4">
+            <div
+              data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 4}, "1200": {"items": 5}}}'>
+              <div>
+                <img src="./assets/images/logo/logo-1-white.svg" alt="Logo" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/logo-2-white.svg" alt="Logo" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/logo-3-white.svg" alt="Logo" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/logo-4-white.svg" alt="Logo" class="logo">
+              </div>
+              <div>
+                <img src="./assets/images/logo/logo-5-white.svg" alt="Logo" class="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figure class="background background-overlay" style="background-image: url('./assets/images/job-board-1.jpg')"
+      data-top-top="transform: translateY(0%);" data-top-bottom="transform: translateY(10%);"></figure>
+  </section>
+
+
+
+  <!-- categories -->
+  <section class="py-15 py-xl-20 bg-light border-bottom">
+    <div class="container foreground">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-8">
+          <h2 class="fw-light"><span class="fw-bold">60+ companies</span> are looking for you, browse positions.</h2>
+        </div>
+      </div>
+      <div class="row g-1">
+        <div class="col-md-6 col-lg-8 col-xl-6" data-aos="fade-up">
+          <a href="" class="card h-100 bg-white card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Managment & Finance</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+          <a href="" class="card equal-lg-1-1 bg-white card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Sales & Marketing</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+          <a href="" class="card equal-lg-1-1 bg-white card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Programming</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+          <a href="" class="card equal-lg-1-1 bg-white card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Design</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="400">
+          <a href="" class="card equal-lg-1-1 bg-white card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Customer Support</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="500">
+          <a href="" class="card equal-lg-1-1 bg-white card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Product</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-8 col-xl-3" data-aos="fade-up" data-aos-delay="600">
+          <a href="" class="card equal-xl-1-1 bg-white h-100 card-hover-border">
+            <div class="card-wrap">
+              <div class="card-header pb-0">
+                <span class="text-muted">22 openings</span>
+              </div>
+              <div class="card-footer mt-auto">
+                <h3 class="card-title">Business Development</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- listing -->
+  <section class="py-15 py-xl-20 bg-light">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-8">
+          <h2 class="fw-light">Latest <span class="fw-bold">openings</span></h2>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col">
+          <ul class="list-unstyled">
+            <li>
+              <a href="" class="card bg-white card-hover-border">
+                <div class="card-body py-4">
+                  <div class="row align-items-center g-2 g-md-4 text-center text-md-start">
+                    <div class="col-md-9">
+                      <p class="fs-lg mb-0">Senior Visual Designer</p>
+                      <ul class="list-inline list-inline-separated text-muted">
+                        <li class="list-inline-item">at Spotify</li>
+                        <li class="list-inline-item">San Francisco, CA</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 text-lg-end">
+                      <span>$95k – $150k</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mt-1">
+              <a href="" class="card bg-white card-hover-border">
+                <div class="card-body py-4">
+                  <div class="row align-items-center g-2 g-md-4 text-center text-md-start">
+                    <div class="col-md-9">
+                      <p class="fs-lg mb-0">Senior Visual Designer</p>
+                      <ul class="list-inline list-inline-separated text-muted">
+                        <li class="list-inline-item">at Spotify</li>
+                        <li class="list-inline-item">San Francisco, CA</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 text-lg-end">
+                      <span>$95k – $150k</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mt-1">
+              <a href="" class="card bg-white card-hover-border">
+                <div class="card-body py-4">
+                  <div class="row align-items-center g-2 g-md-4 text-center text-md-start">
+                    <div class="col-md-9">
+                      <p class="fs-lg mb-0">Senior Visual Designer</p>
+                      <ul class="list-inline list-inline-separated text-muted">
+                        <li class="list-inline-item">at Spotify</li>
+                        <li class="list-inline-item">San Francisco, CA</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 text-lg-end">
+                      <span>$95k – $150k</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mt-1">
+              <a href="" class="card bg-white card-hover-border">
+                <div class="card-body py-4">
+                  <div class="row align-items-center g-2 g-md-4 text-center text-md-start">
+                    <div class="col-md-9">
+                      <p class="fs-lg mb-0">Senior Visual Designer</p>
+                      <ul class="list-inline list-inline-separated text-muted">
+                        <li class="list-inline-item">at Spotify</li>
+                        <li class="list-inline-item">San Francisco, CA</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 text-lg-end">
+                      <span>$95k – $150k</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mt-1">
+              <a href="" class="card bg-white card-hover-border">
+                <div class="card-body py-4">
+                  <div class="row align-items-center g-2 g-md-4 text-center text-md-start">
+                    <div class="col-md-9">
+                      <p class="fs-lg mb-0">Senior Visual Designer</p>
+                      <ul class="list-inline list-inline-separated text-muted">
+                        <li class="list-inline-item">at Spotify</li>
+                        <li class="list-inline-item">San Francisco, CA</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 text-lg-end">
+                      <span>$95k – $150k</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row mb-5 align-items-end">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Latest blog posts</h2>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <a href="" class="action underline">View all <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="row g-3 g-xl-5">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <a href="" class="card equal equal-3-4 card-hover-gradient inverted">
+            <figure class="background" style="background-image: url('./assets/images/job-board-2.jpg')">
+            </figure>
+            <div class="card-wrap">
+              <div class="card-footer mt-auto text-shadow">
+                <time datetime="2020-12-18 20:00" class="eyebrow text-secondary mb-1">18 December</time>
+                <h5 class="card-title">Ethical Considerations In UX Research: The Need For Training And Review</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="" class="card equal equal-3-4 card-hover-gradient inverted">
+            <figure class="background" style="background-image: url('./assets/images/job-board-3.jpg')">
+            </figure>
+            <div class="card-wrap">
+              <div class="card-footer mt-auto text-shadow">
+                <time datetime="2020-12-18 20:00" class="eyebrow text-secondary mb-1">18 December</time>
+                <h5 class="card-title">Ethical Considerations In UX Research: The Need For Training And Review</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="" class="card equal equal-3-4 card-hover-gradient inverted">
+            <figure class="background" style="background-image: url('./assets/images/job-board-4.jpg')">
+            </figure>
+            <div class="card-wrap">
+              <div class="card-footer mt-auto text-shadow">
+                <time datetime="2020-12-18 20:00" class="eyebrow text-secondary mb-1">18 December</time>
+                <h5 class="card-title">Ethical Considerations In UX Research: The Need For Training And Review</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- subscribe -->
+  <section class="bg-primary mx-xl-3 py-15 py-xl-20 inverted overflow-hidden">
+    <div class="container level-1">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">
+          <h2 class="fw-light mb-5"><span class="fw-bold">Subscribe</span> and get latest entries right to your inbox.
+          </h2>
+          <div class="grouped-inputs p-1 border rounded-pill mb-2">
+            <div class="row g-1">
+              <div class="col-lg-9">
+                <input type="text" class="form-control px-4 rounded-pill" aria-label="Text input with dropdown button"
+                  placeholder="Your email address">
+              </div>
+              <div class="col-lg-3 d-grid">
+                <a href="" class="btn btn-white rounded-pill">Subscribe</a>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">We'll never share your email with anyone else.</small>
+        </div>
+      </div>
+    </div>
+    <figure class="background background-overlay background-parallax"
+      style="background-image: url('./assets/images/job-board-5.jpg')" data-bottom-top="transform: translateY(0%);"
+      data-top-bottom="transform: translateY(20%);">
+    </figure>
+  </section>
+
+
+  <!-- cta -->
+  <section class="py-15 py-xl-20 border-bottom">
+    <div class="container">
+      <div class="row g-4 g-xl-6">
+        <div class="col-lg-6" data-aos="fade-up">
+          <a href="" class="card h-100 border card-arrow">
+            <div class="card-body">
+              <h4 class="card-title fw-light fs-4"><span class="fw-bold">Let's connect.</span> Follow us on social
+                media.</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <a href="" class="card card-arrow bg-primary inverted overflow-hidden">
+            <div class="card-body">
+              <h4 class="card-title fw-light fs-4">We'd love to <span class="fw-bold">get in touch</span> with you and
+                your team.</h4>
+            </div>
+            <img class="position-absolute top-50 start-50 translate-middle level-3" src="./assets/images/svg/dialog.svg"
+              alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  {{> footer/footer-4
+  logo="/assets/images/logo/logo-dark.svg"
+  class="py-15 py-xl-20"
+  }}
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

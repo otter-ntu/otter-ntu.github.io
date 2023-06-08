@@ -1,0 +1,237 @@
+//
+// accordions
+//
+
+.accordion {
+  .accordion-item {
+    position: relative;
+    border: 0;
+    background: transparent;
+
+    &:not(:first-child) {
+      border-top: $border-width solid $border-color;
+    }
+  }
+
+  .accordion-button {
+    transition: all 0.2s;
+    position: relative;
+    background-color: transparent;
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+    padding-right: rem(40);
+    padding-left: 0;
+    box-shadow: none;
+    color: inherit;
+
+    &:not(.collapsed) {
+      color: inherit;
+    }
+
+    .row {
+      flex: 1 1 auto;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-family: bootstrap-icons !important;
+      font-size: $font-size-base;
+      content: "\f282";
+      color: inherit;
+      margin-top: -0.5em;
+      width: 1em;
+      height: 1em;
+      background: transparent;
+    }
+  }
+
+  .accordion-body {
+    padding: 0 rem(40) rem(32) 0;
+  }
+}
+
+// classic
+.accordion-classic {
+  border: $border-width solid $border-color;
+  overflow: hidden;
+
+  .accordion-button {
+    padding: rem(32);
+
+    &::after {
+      right: rem(32);
+    }
+  }
+
+  .accordion-body {
+    padding: 0 rem(32) rem(32) rem(32);
+  }
+}
+
+// minimal
+.accordion-minimal {
+  .accordion-item {
+    &:not(:first-child) {
+      border-top: 0;
+      margin-top: rem(24);
+    }
+  }
+
+  .accordion-button,
+  .accordion-body {
+    padding: 0 0 0 rem(40);
+  }
+
+  .accordion-body {
+    padding-top: rem(16);
+  }
+
+  .accordion-button::after {
+    right: auto;
+    left: 0;
+    content: "\f64d";
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(-135deg);
+  }
+}
+
+// steps
+.accordion-steps {
+  .accordion-item {
+    position: relative;
+    counter-increment: accordion;
+
+    &:not(:first-child) {
+      border-top: 0;
+      margin-top: rem(40);
+    }
+
+    &:not(:first-child) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: rem(2);
+        top: rem(-32);
+        left: rem(30);
+        bottom: calc(50% + 40px);
+        background: $border-color;
+      }
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: rem(2);
+        top: calc(50% + 40px);
+        left: rem(30);
+        bottom: rem(-32);
+        background: $border-color;
+      }
+    }
+  }
+
+  .accordion-button {
+    position: static;
+    min-height: rem(64);
+
+    &::before {
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: counter(accordion, decimal);
+      display: flex;
+      width: rem(64);
+      height: rem(64);
+      align-items: center;
+      justify-content: center;
+      margin-top: rem(-32);
+      background: $black;
+      color: $white;
+      font-size: $font-size-lg;
+      border-radius: 50%;
+      z-index: 4;
+    }
+
+    &::after {
+      position: static;
+      margin-left: rem(8);
+      margin-top: 0;
+    }
+
+    &[aria-expanded="true"] {
+      color: var(--bs-primary);
+
+      &::before {
+        background: var(--bs-primary);
+      }
+    }
+
+    &:hover {
+      color: var(--bs-primary);
+
+      &::before {
+        background: var(--bs-primary);
+      }
+    }
+  }
+
+  .accordion-button,
+  .accordion-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: rem(96);
+  }
+
+  .accordion-body {
+    padding-bottom: rem(16);
+  }
+}
+
+// interaction
+//
+
+// highlight
+.accordion[class*="-highlight"] {
+  &:hover {
+    .accordion-button {
+      opacity: 0.5;
+    }
+  }
+
+  .accordion-button {
+    &:hover,
+    &:not(.collapsed) {
+      opacity: 1;
+    }
+  }
+}
+
+// selection
+.accordion[class*="-select"] {
+  .accordion-item {
+    &::before {
+      @include transition;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba($black, 0.04);
+      opacity: 0;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      left: rem(-16);
+      right: rem(-16);
+    }
+  }
+}

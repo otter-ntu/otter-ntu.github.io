@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Badge - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="badge"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Badge</h1>
+              <p class="lead text-secondary">Documentation and examples for badges, our small count and labeling
+                component.</p>
+              <a href="https://getbootstrap.com/docs/5.0/components/badge/" class="underline action">Bootstrap
+                documentation <i class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <!-- headings -->
+            <section>
+              <h3 class="fs-4">Headings</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <h3>Example heading <span class="badge bg-primary rounded-pill">New</span></h3>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <h1>Example heading <span class="badge bg-primary">New</span></h1>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+            <!-- colors -->
+            <section>
+              <h3 class="fs-4">Colors</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <span class="badge bg-primary">Primary</span>
+                  <span class="badge bg-secondary">Secondary</span>
+                  <span class="badge bg-success">Success</span>
+                  <span class="badge bg-danger">Danger</span>
+                  <span class="badge bg-warning text-dark">Warning</span>
+                  <span class="badge bg-info text-dark">Info</span>
+                  <span class="badge bg-light text-dark">Light</span>
+                  <span class="badge bg-dark">Dark</span>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <span class="badge bg-primary">Primary</span>
+                    <span class="badge bg-secondary">Secondary</span>
+                    <span class="badge bg-success">Success</span>
+                    <span class="badge bg-danger">Danger</span>
+                    <span class="badge bg-warning text-dark">Warning</span>
+                    <span class="badge bg-info text-dark">Info</span>
+                    <span class="badge bg-light text-dark">Light</span>
+                    <span class="badge bg-dark">Dark</span>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- pill -->
+            <section>
+              <h3 class="fs-4">Pill</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <span class="badge rounded-pill bg-primary">Primary</span>
+                  <span class="badge rounded-pill bg-secondary">Secondary</span>
+                  <span class="badge rounded-pill bg-success">Success</span>
+                  <span class="badge rounded-pill bg-danger">Danger</span>
+                  <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+                  <span class="badge rounded-pill bg-info text-dark">Info</span>
+                  <span class="badge rounded-pill bg-light text-dark">Light</span>
+                  <span class="badge rounded-pill bg-dark">Dark</span>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <span class="badge rounded-pill bg-primary">Primary</span>
+                    <span class="badge rounded-pill bg-secondary">Secondary</span>
+                    <span class="badge rounded-pill bg-success">Success</span>
+                    <span class="badge rounded-pill bg-danger">Danger</span>
+                    <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+                    <span class="badge rounded-pill bg-info text-dark">Info</span>
+                    <span class="badge rounded-pill bg-light text-dark">Light</span>
+                    <span class="badge rounded-pill bg-dark">Dark</span>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- button -->
+            <section>
+              <h3 class="fs-4">Button</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <button type="button" class="btn btn-primary rounded-pill">
+                    Notifications <span class="badge rounded-circle bg-opaque-white">4</span>
+                  </button>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <button type="button" class="btn btn-primary rounded-pill">
+                      Notifications <span class="badge rounded-circle bg-opaque-white">4</span>
+                    </button>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- positioned -->
+            <section>
+              <h3 class="fs-4">Positioned</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <button type="button" class="btn btn-primary rounded-pill position-relative">
+                    Inbox
+                    <span class="position-absolute top-10 start-90 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <button type="button" class="btn btn-primary rounded-pill position-relative">
+                      Inbox
+                      <span class="position-absolute top-10 start-90 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

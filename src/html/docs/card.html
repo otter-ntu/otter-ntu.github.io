@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Card - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="card"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Card</h1>
+              <p class="lead text-secondary">Bootstrap’s cards provide a flexible and extensible content container with
+                multiple variants and options.</p>
+              <a href="https://getbootstrap.com/docs/5.0/components/card/" class="underline action">Bootstrap
+                documentation <i class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <!-- example -->
+            <section>
+              <h3 class="fs-4">Card</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card border">
+                        <img src="../assets/images/small-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card border">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- interactions -->
+            <section>
+              <h3 class="fs-4">Interactions</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row g-3 g-xl-5">
+                    <div class="col-lg-6">
+                      <div class="card card-hover-gradient equal-1-1 inverted">
+                        <figure class="background" style="background-image: url('../assets/images/small-2.jpg')">
+                        </figure>
+                        <div class="card-wrap">
+                          <div class="card-footer mt-auto">
+                            <h4 class="card-title">.card-hover-gradient</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card card-hover-reveal border equal-1-1">
+                        <figure class="background" style="background-image: url('../assets/images/small-3.jpg')">
+                        </figure>
+                        <div class="card-wrap">
+                          <div class="card-footer mt-auto">
+                            <h4 class="card-title">.card-hover-reveal</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="#" class="card card-hover-border bg-light equal-1-1">
+                        <div class="card-wrap">
+                          <div class="card-footer mt-auto">
+                            <h4 class="card-title">.card-hover-border</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card card-arrow card-hover-arrow equal-1-1 inverted">
+                        <figure class="background background-overlay"
+                          style="background-image: url('../assets/images/small-4.jpg')">
+                        </figure>
+                        <div class="card-wrap">
+                          <div class="card-footer mt-auto">
+                            <h4 class="card-title">.card-hover-arrow</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- blog -->
+            <section>
+              <h3 class="fs-4">Blog</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <article class="card">
+                        <a href="article.html"><img src="../assets/images/small-5.jpg" class="card-img-top"
+                            alt="Image"></a>
+                        <div class="card-body p-0 pe-lg-10 mt-2">
+                          <a href="article.html" class="card-title">
+                            <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+                          </a>
+                          <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+                            2020</time>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="" class="card equal-md-3-4 card-hover-gradient inverted">
+                        <figure class="background" style="background-image: url('../assets/images/small-6.jpg')">
+                        </figure>
+                        <div class="card-wrap">
+                          <div class="card-footer mt-auto text-shadow">
+                            <time datetime="2020-12-18 20:00" class="eyebrow text-secondary mb-1">18 December</time>
+                            <h5 class="card-title">Ethical Considerations In UX Research: The Need For Training And
+                              Review</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <article class="card">
+                      <a href="article.html"><img src="../assets/images/small-5.jpg" class="card-img-top"
+                          alt="Image"></a>
+                      <div class="card-body p-0 pe-lg-10 mt-2">
+                        <a href="article.html" class="card-title">
+                          <h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+                        </a>
+                        <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+                          2020</time>
+                      </div>
+                    </article>
+
+                    <a href="" class="card equal-md-3-4 card-hover-gradient inverted">
+                      <figure class="background" style="background-image: url('../assets/images/small-6.jpg')">
+                      </figure>
+                      <div class="card-wrap">
+                        <div class="card-footer mt-auto text-shadow">
+                          <time datetime="2020-12-18 20:00" class="eyebrow text-secondary mb-1">18 December</time>
+                          <h5 class="card-title">Ethical Considerations In UX Research: The Need For Training And
+                            Review</h5>
+                        </div>
+                      </div>
+                    </a>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- pricing -->
+            <section>
+              <h3 class="fs-4">Pricing</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="card border bg-primary inverted">
+                        <div class="card-body">
+                          <h2 class="h1 mb-4">$49</h2>
+                          <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <ul class="list-unstyled mb-4">
+                            <li class="py-1">6 Premium accounts</li>
+                            <li class="py-1">Ad-free usic listening</li>
+                            <li class="py-1">Listen to music ad-free</li>
+                          </ul>
+                          <div class="d-grid">
+                            <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                              class="btn btn-outline-white btn-lg rounded-pill btn-with-icon">Buy Now <i
+                                class="bi bi-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card border">
+                        <div class="card-body">
+                          <h2 class="h1 mb-4">$149</h2>
+                          <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <ul class="list-unstyled mb-4">
+                            <li class="py-1">6 Premium accounts</li>
+                            <li class="py-1">Ad-free usic listening</li>
+                            <li class="py-1">Listen to music ad-free</li>
+                          </ul>
+                          <div class="d-grid">
+                            <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                              class="btn btn-outline-primary btn-lg rounded-pill btn-with-icon">Buy Now <i
+                                class="bi bi-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="card border bg-primary inverted">
+                      <div class="card-body">
+                        <h2 class="h1 mb-4">$49</h2>
+                        <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul class="list-unstyled mb-4">
+                          <li class="py-1">6 Premium accounts</li>
+                          <li class="py-1">Ad-free usic listening</li>
+                          <li class="py-1">Listen to music ad-free</li>
+                        </ul>
+                        <div class="d-grid">
+                          <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                            class="btn btn-outline-white btn-lg rounded-pill btn-with-icon">Buy Now <i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card border">
+                      <div class="card-body">
+                        <h2 class="h1 mb-4">$149</h2>
+                        <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul class="list-unstyled mb-4">
+                          <li class="py-1">6 Premium accounts</li>
+                          <li class="py-1">Ad-free usic listening</li>
+                          <li class="py-1">Listen to music ad-free</li>
+                        </ul>
+                        <div class="d-grid">
+                          <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                            class="btn btn-outline-primary btn-lg rounded-pill btn-with-icon">Buy Now <i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- portfolio -->
+            <section>
+              <h3 class="fs-4">Portfolio</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      {{> components/card-portfolio
+                      link="startup.html"
+                      title="Startup"
+                      image="./assets/images/pages/startup.jpg"
+                      }}
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    {{> components/card-portfolio
+                      link="startup.html"
+                      title="Startup"
+                      image="./assets/images/pages/startup.jpg"
+                      }}
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- form -->
+            <section>
+              <h3 class="fs-4">Form</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body position-relative">
+                  <div class="row justify-content-center level-3">
+                    <div class="col-lg-8">
+                      <div class="card">
+                        <div class="card-header bg-white text-center pb-0">
+                          <h5 class="fs-4 mb-1">Sign In</h5>
+                        </div>
+                        <div class="card-body bg-white">
+                          <div class="d-grid">
+                            <a href="" class="btn btn-outline-red btn-with-icon text-white-hover">Sign In with Google <i
+                                class="bi bi-google"></i></a>
+                          </div>
+                          <div class="text-muted text-center small py-2">or use your email</div>
+                          <form action="#">
+                            <div class="form-floating mb-2">
+                              <input type="email" class="form-control" id="floatingInput"
+                                placeholder="name@example.com">
+                              <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                              <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="d-grid mb-2">
+                              <a href="" class="btn btn-lg btn-primary">Sign In</a>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label small text-secondary" for="defaultCheck1">
+                                    Remember me
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col text-end">
+                                <a href="forgot-password.html" class="underline small">Forgot password?</a>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="card-footer bg-opaque-white inverted text-center">
+                          <p class="text-muted">Don't have an account yet? <a href="register.html"
+                              class="underline">Register</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figure class="background background-overlay"
+                    style="background-image: url('../assets/images/small-3.jpg')"
+                    data-top-top="transform: translateY(0%);" data-top-bottom="transform: translateY(10%);"></figure>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html"></script>
+                </div>
+              </div>
+            </section>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

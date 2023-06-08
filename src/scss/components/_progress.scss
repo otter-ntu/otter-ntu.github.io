@@ -1,0 +1,16 @@
+//
+// progress
+//
+
+.progress {
+  border-radius: rem(25);
+  overflow: visible;
+  height: rem(20);
+
+  .progress-bar {
+    border-radius: rem(25);
+    position: relative;
+    overflow: visible;
+    height: rem(20);
+  }
+}

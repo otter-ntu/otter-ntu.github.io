@@ -1,0 +1,24 @@
+//
+// modal
+//
+
+.modal-close {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  width: rem(56);
+  height: rem(56);
+  line-height: rem(56);
+  text-align: center;
+  background: 0;
+  padding: 0;
+  font-size: rem(28);
+  border: 0;
+  color: inherit;
+
+  &:hover {
+    background: rgba($black, 0.05);
+  }
+}

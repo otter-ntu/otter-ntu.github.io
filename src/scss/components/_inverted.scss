@@ -1,0 +1,131 @@
+// dark mode
+//
+// add .inverted class to any section to switch color scheme to dark mode
+
+$border-color-inverted: rgba($white, 0.2);
+
+.inverted {
+  color: $white !important;
+
+  // all .border-top, .border-right ... classes
+  [class*="border"],
+  &[class*="border"] {
+    border-color: $border-color-inverted !important;
+  }
+
+  // text colors
+  .text-muted {
+    color: rgba($white, 0.5) !important;
+  }
+
+  .text-secondary {
+    color: rgba($white, 0.75) !important;
+  }
+
+  .highlighted {
+    &::before {
+      background: rgba($white, 0.1);
+    }
+  }
+
+  // links
+  a:not(.btn):not(.dropdown-item) {
+    color: $white;
+
+    &:hover {
+      color: rgba($white, 0.75);
+    }
+  }
+
+  // buttons
+  .btn-outline-white {
+    border-color: $border-color-inverted;
+  }
+
+  // list groups
+  .list-group .list-group-item {
+    border-color: $border-color-inverted;
+  }
+
+  .list-group-link:hover {
+    background: rgba($white, 0.05);
+  }
+
+  // accordions
+  .accordion {
+    .accordion-item:not(:first-child) {
+      border-color: $border-color-inverted;
+    }
+  }
+
+  // browser
+  .browser {
+    > span {
+      background: $white;
+
+      &::before {
+        background: rgba($white, 0.75);
+      }
+
+      &::after {
+        background: rgba($white, 0.5);
+      }
+    }
+  }
+
+  // code
+  pre[class*="language-"],
+  code[class*="language-"] {
+    color: lighten($primary, 10%);
+  }
+
+  .token {
+    color: rgba($white, 0.5);
+
+    &.selector,
+    &.punctuation {
+      color: $white;
+    }
+  }
+
+  // grouped inputs
+  .grouped-inputs {
+    &.focused {
+      border-color: rgba($white, 1) !important;
+    }
+
+    .form-control,
+    .form-select {
+      color: $white;
+
+      &::placeholder {
+        color: rgba($white, 0.5);
+      }
+    }
+  }
+
+  // progress bar
+  .progress {
+    background-color: rgba($black, 0.2);
+
+    .progress-bar {
+      background: $white;
+      color: $primary;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  // floating labels
+  .form-floating {
+    .form-control,
+    .form-select {
+      background-color: rgba($white, 0.1);
+      border-color: transparent;
+      color: $white;
+
+      &:focus {
+        background-color: rgba($white, 0.15);
+      }
+    }
+  }
+}

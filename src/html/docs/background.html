@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Steps - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="btn-primary"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="utilities"
+            active="background"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Background</h1>
+              <p class="lead text-secondary">A utility that helps you add background to any element. It takes parent
+                elements full width and height.</p>
+            </section>
+
+
+            <!-- image -->
+            <section>
+              <h3 class="fs-4">Image Background</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white overflow-hidden position-relative min-vh-25">
+                  <figure class="background background-overlay"
+                    style="background-image: url('../assets/images/small-6.jpg')"></figure>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <figure class="background background-overlay" style="background-image: url('../assets/images/image-1.jpg')"></figure>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- video -->
+            <section>
+              <h3 class="fs-4">Video Background</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white overflow-hidden position-relative min-vh-25">
+                  <div class="background background-overlay">
+                    <video data-video playsinline autoplay muted loop>
+                      <source src="../assets/video/video-2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="background background-overlay">
+                      <video data-video playsinline autoplay muted loop>
+                        <source src="./assets/video/video-2.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- color -->
+            <section>
+              <h3 class="fs-4">Scroll Color</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body p-0 overflow-hidden position-relative">
+                  <figure class="min-vh-25" data-bottom-top="background-color: rgba(44,73,244,1)"
+                    data-center-center="background-color: rgba(235,60,39,1)"
+                    data-top-bottom="background-color: rgba(44,73,244,1)"></figure>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <figure class="min-vh-25" 
+                    data-bottom-top="background-color: rgba(44,73,244,1)"
+                    data-center-center="background-color: rgba(235,60,39,1)"
+                    data-top-bottom="background-color: rgba(44,73,244,1)">
+                    </figure>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

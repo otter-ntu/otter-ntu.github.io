@@ -1,0 +1,168 @@
+//
+// dropdowns
+//
+
+.dropdown {
+  @include nofocus;
+
+  > a {
+    @include nofocus;
+  }
+}
+
+.dropdown-menu {
+  box-shadow: 0 0 rem(24) 0 rgba($black, 0.1);
+  padding: rem(24) rem(16);
+  border: 0;
+
+  .dropdown-item {
+    @include nofocus;
+    background: transparent;
+    position: relative;
+    padding: rem(4) rem(16);
+    font-size: $font-size-sm;
+    color: $secondary;
+
+    &:hover,
+    &:active {
+      padding-left: rem(12);
+      padding-right: rem(20);
+      background: transparent;
+      color: $black;
+    }
+
+    &.active {
+      color: $primary;
+      background: transparent;
+
+      &:hover,
+      &:active {
+        padding-left: rem(16);
+        padding-right: rem(16);
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .dropdown-label {
+    @include nofocus;
+    display: inline-block;
+    background: transparent;
+    position: relative;
+    padding: rem(4) rem(16);
+    font-size: $font-size-sm;
+
+    &:not(:first-child) {
+      margin-top: rem(16);
+    }
+  }
+}
+
+.dropdown-menu-detailed {
+  li + li {
+    margin-top: rem(8);
+  }
+
+  li span {
+    position: relative;
+    padding-left: rem(40);
+
+    .bi {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -0.5em;
+      font-size: rem(24);
+      color: $black;
+    }
+
+    small {
+      display: block;
+      font-size: $font-size-sm;
+      color: $gray-700;
+    }
+  }
+}
+
+// navbar dropdown
+@include media-breakpoint-up(lg) {
+  .dropdown {
+    .dropdown-menu {
+      @include translate(-50%, 0);
+      left: 50%;
+
+      &[class*="-md"] {
+        min-width: 25vw;
+        column-count: 2;
+      }
+
+      &[class*="-custom"] {
+        min-width: 30vw;
+        padding: 0;
+      }
+    }
+  }
+
+  .dropend {
+    .dropdown-menu {
+      @include translate(0, 0);
+      left: 100%;
+      top: rem(-24);
+    }
+
+    .dropdown-toggle {
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: rem(12);
+        margin-top: -2px;
+        border-width: rem(4) 0 rem(4) rem(4);
+        border-style: solid;
+        color: $gray-400;
+      }
+    }
+  }
+
+  // dropdown hover
+  .dropdown-hover {
+    > .dropdown-menu {
+      transition: all 0.2s ease-in-out;
+      display: block;
+      pointer-events: none;
+      opacity: 0;
+      margin: rem(10) 0 0 0;
+    }
+
+    &:hover > .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+      margin: 0;
+    }
+
+    > .dropdown-toggle {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  // dropend hover
+  .dropend-hover {
+    &:hover > .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+      margin: 0;
+    }
+
+    > .dropdown-menu {
+      @include transition;
+      display: block;
+      pointer-events: none;
+      margin: 0 0 0 rem(10);
+      opacity: 0;
+    }
+  }
+}

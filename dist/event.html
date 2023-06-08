@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" /> -->
+  
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/index.bundle.css" />
+  
+  <!-- Title -->
+  <title>Event</title></head>
+
+<body>
+
+
+
+  <!-- navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
+  
+      <!-- secondary -->
+      <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+        <li class="nav-item d-lg-none">
+          <a class="nav-link nav-icon" href="" role="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-list"></span>
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a href="" class="btn btn-outline-white rounded-pill ms-2">
+            Buy Cube
+          </a>
+        </li>
+      </ul>
+  
+      <!-- primary -->
+      <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Landings
+            </a>
+  
+            <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
+              <li><a class="dropdown-item "
+                  href="./startup.html">Startup</a></li>
+              <li><a class="dropdown-item " href="./saas.html">Saas</a>
+              </li>
+              <li><a class="dropdown-item "
+                  href="./coworking.html">Coworking</a></li>
+              <li><a class="dropdown-item "
+                  href="./job-board.html">Job Board</a></li>
+              <li><a class="dropdown-item "
+                  href="./agency.html">Agency</a>
+              </li>
+              <li><a class="dropdown-item " href="./blog.html">Blog</a>
+              </li>
+              <li><a class="dropdown-item "
+                  href="./product.html">Product</a></li>
+              <li><a class="dropdown-item " href="./app.html">App</a>
+              </li>
+              <li><a class="dropdown-item " href="./shop.html">Shop</a>
+              </li>
+              <li><a class="dropdown-item active"
+                  href="./event.html">Event</a></li>
+              <li><a class="dropdown-item "
+                  href="./course.html">Course</a>
+              </li>
+              <li><a class="dropdown-item "
+                  href="./service.html">Service</a></li>
+              <li><a class="dropdown-item "
+                  href="./software.html">Software</a></li>
+              <li><a class="dropdown-item "
+                  href="./documentation.html">Documentation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
+              <div class="row g-0">
+                <div class="col-6">
+                  <div class="p-4">
+                    <span class="dropdown-label">Company</span>
+                    <a class="dropdown-item "
+                      href="./about.html">About</a>
+                    <a class="dropdown-item "
+                      href="./pricing.html">Pricing</a>
+                    <a class="dropdown-item " href="./faq.html">FAQ</a>
+                    <a class="dropdown-item "
+                      href="./terms.html">Terms</a>
+                    <a class="dropdown-item "
+                      href="./services.html">Services</a>
+                    <a class="dropdown-item "
+                      href="./job-listing.html">Job Listing</a>
+                    <a class="dropdown-item "
+                      href="./job-post.html">Job Post</a>
+                    <span class="dropdown-label">Portfolio</span>
+                    <a class="dropdown-item "
+                      href="./portfolio-grid.html">Grid</a>
+                    <a class="dropdown-item "
+                      href="./portfolio-list.html">List</a>
+                    <a class="dropdown-item "
+                      href="./case-study.html">Case Study</a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-4">
+                    <span class="dropdown-label">Blog</span>
+                    <a class="dropdown-item "
+                      href="./blog-listing.html">Listing</a>
+                    <a class="dropdown-item "
+                      href="./blog-post.html">Post</a>
+                    <span class="dropdown-label">Contact</span>
+                    <a class="dropdown-item "
+                      href="./contact.html">Classic</a>
+                    <a class="dropdown-item "
+                      href="./contact-location.html">Location</a>
+                    <span class="dropdown-label">Utilities</span>
+                    <a class="dropdown-item " href="./404.html">404</a>
+                    <a class="dropdown-item "
+                      href="./coming-soon.html">Coming Soon</a>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <a href="" class="card card-arrow inverted bg-green">
+                    <div class="card-footer mt-auto">
+                      <h4 class="lead lh-3 fw-light">Buy Cube</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
+              <li><a class="dropdown-item "
+                  href="./account.html">Dashboard</a></li>
+              <li><a class="dropdown-item "
+                  href="./account-settings.html">Settings</a></li>
+              <li><a class="dropdown-item "
+                  href="./account-orders.html">Orders</a></li>
+              <li><a class="dropdown-item "
+                  href="./account-billing.html">Billing</a></li>
+              <li><a class="dropdown-item " href="./sign-in.html">Sign
+                  in</a></li>
+              <li><a class="dropdown-item "
+                  href="./register.html">Register</a></li>
+              <li><a class="dropdown-item "
+                  href="./forgot-password.html">Forgot Password</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-auto-close="outside">
+              Shop
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
+              <li><a class="dropdown-item "
+                  href="./shop-product.html">Product</a></li>
+              <li class="dropend dropend-hover">
+                <a class="dropdown-item dropdown-toggle  "
+                  href="#" id="navbarDropend-1" data-bs-toggle="dropdown" aria-expanded="false"
+                  data-bs-auto-close="outside">Listing</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropend-1">
+                  <li><a class="dropdown-item "
+                      href="./shop-listing.html">Full width</a></li>
+                  <li><a class="dropdown-item "
+                      href="./shop-listing-sidebar.html">Sidebar</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item "
+                  href="./shop-cart.html">Cart</a></li>
+              <li><a class="dropdown-item "
+                  href="./shop-checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-5" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Docs
+            </a>
+            <ul class="dropdown-menu dropdown-menu-detailed" aria-labelledby="navbarDropdown-5">
+              <li><a class="dropdown-item " href="./docs/index.html">
+                  <span>
+                    <i class="bi bi-book"></i>
+                    Get Started
+                    <small>Customising and building</small>
+                  </span>
+                </a>
+              </li>
+              <li><a class="dropdown-item "
+                  href="./docs/accordion.html">
+                  <span>
+                    <i class="bi bi-grid"></i>
+                    Components
+                    <small>Full list of components</small>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+              class="nav-link text-primary">Buy Cube</a>
+          </li>
+        </ul>
+      </div>
+  
+  
+  
+      <!-- mobile user menu -->
+  
+  
+  
+  
+    </div>
+  </nav>
+  
+  
+
+
+
+  <!-- header -->
+  <section class="cover overflow-hidden bg-primary inverted">
+    <div class="d-flex flex-column min-vh-100 py-20 container foreground">
+      <div class="row justify-content-center my-auto">
+        <div class="col-lg-8 col-xl-6">
+          <h1 class="display-1 mb-1">Digital Marketing Conference.</h1>
+          <div class="text-secondary fs-3">
+            <span data-typed='{"strings": ["10 - 11 December, 2021", "New York, USA"]}'></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figure class="background background-dimm" style="background-image: url('./assets/images/event.jpg')"
+      data-top-top="transform: translateY(0%);" data-top-bottom="transform: translateY(20%);"></figure>
+    <span class="scroll-down"></span>
+  </section>
+
+
+  <!-- logo list -->
+  <section class="py-10 border-bottom">
+    <div class="container">
+      <div class="carousel carousel-align text-center">
+        <div
+          data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 4}, "1200": {"items": 5}}}'>
+          <div>
+            <img src="./assets/images/logo/logo-1.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-2.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-3.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-4.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-5.svg" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- features -->
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-10 col-xl-5 mb-5 mb-xl-0">
+          <h2>We create beautiful, functional spaces</h2>
+          <p class="text-secondary lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua.</p>
+          <a href="" class="action underline">Get Tickets <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-xl-6">
+          <div class="row g-3 g-xl-5" data-masonry>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card equal-xl-1-1 bg-primary inverted">
+                <div class="card-wrap">
+                  <div class="card-header pb-0">
+                    <i class="bi bi-clock-fill fs-3"></i>
+                  </div>
+                  <div class="card-footer mt-auto">
+                    <h3 class="fs-4">10-11 Dec</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-xl-20" data-aos="fade-up">
+              <div class="card equal-xl-1-1 inverted">
+                <div class="card-wrap">
+                  <div class="card-header pb-0">
+                    <i class="bi bi-compass-fill fs-3"></i>
+                  </div>
+                  <div class="card-footer mt-auto">
+                    <h3 class="fs-4">New York, USA</h3>
+                  </div>
+                </div>
+                <figure class="background background-overlay"
+                  style="background-image: url('./assets/images/newyork.jpg')" data-top-top="transform: translateY(0%);"
+                  data-top-bottom="transform: translateY(20%);"></figure>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card equal-xl-1-1 bg-light">
+                <div class="card-wrap">
+                  <div class="card-header pb-0">
+                    <i class="bi bi-people-fill fs-3"></i>
+                  </div>
+                  <div class="card-footer mt-auto">
+                    <h3 class="fs-4">120 Speakers</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- schedule -->
+  <section class="py-20 bg-light">
+    <div class="container foreground">
+      <div class="row mb-5 justify-content-between align-items-end">
+        <div class="col mb-2 mb-md-0">
+          <h2 class="lh-1">Schedule</h2>
+        </div>
+        <div class="col-auto">
+          <ul class="nav nav-pills" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">Tue, 10 Dec</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Wed, 11 Dec</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+              <div class="card bg-white">
+                <div class="accordion accordion-classic" id="accordion-1">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading-1-1">
+                      <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                        <div class="d-flex flex-wrap align-items-center w-100">
+                          <div class="col-3 col-md-2 text-secondary fs-lg">8:00
+                          </div>
+                          <div class="col-9 col-md-7 fs-lg">Registration</div>
+                          <div class="d-none d-md-block col-md-3 text-md-end pt-1 pt-md-0">
+                            <ul class="avatar-list">
+                              <li>
+                                <span class="avatar" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  title="Valerie Doe">
+                                  <img src="./assets/images/users/user-1.jpg" class="rounded-circle" alt="Avatar">
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="collapse-1-1" class="accordion-collapse collapse" aria-labelledby="heading-1-1"
+                      data-bs-parent="#accordion-1">
+                      <div class="accordion-body">
+                        <div class="d-flex justify-content-end">
+                          <div class="col-md-10">
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                              Blanditiis
+                              asperiores sed
+                              consectetur
+                              placeat ut vitae ad sequi laudantium explicabo cupiditate non, deserunt quas sapiente
+                              fuga
+                              fugiat a
+                              ipsam adipisci odit.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading-1-2">
+                      <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                        <div class="d-flex flex-wrap align-items-center w-100">
+                          <div class="col-3 col-md-2 text-secondary fs-lg">9:00
+                          </div>
+                          <div class="col-9 col-md-7 fs-lg">Opening words from our headliners</div>
+                          <div class="d-none d-md-block col-md-3 text-md-end pt-1 pt-md-0">
+                            <ul class="avatar-list">
+                              <li>
+                                <span class="avatar rounded-circle bg-primary">
+                                  <span>JD</span>
+                                </span>
+                              </li>
+                              <li>
+                                <span class="avatar" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  title="Valerie Doe">
+                                  <img src="./assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                                </span>
+                              </li>
+                              <li>
+                                <span class="avatar" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  title="Valerie Doe">
+                                  <img src="./assets/images/users/user-3.jpg" class="rounded-circle" alt="Avatar">
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="collapse-1-2" class="accordion-collapse collapse" aria-labelledby="heading-1-2"
+                      data-bs-parent="#accordion-1">
+                      <div class="accordion-body">
+                        <div class="d-flex justify-content-end">
+                          <div class="col-md-10">
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                              Blanditiis
+                              asperiores sed
+                              consectetur
+                              placeat ut vitae ad sequi laudantium explicabo cupiditate non, deserunt quas sapiente
+                              fuga
+                              fugiat a
+                              ipsam adipisci odit.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading-1-3">
+                      <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                        <div class="d-flex flex-wrap align-items-center w-100">
+                          <div class="col-3 col-md-2 text-secondary fs-lg">10:30
+                          </div>
+                          <div class="col-9 col-md-7 fs-lg">Master class from our top product designers from Europe
+                          </div>
+                          <div class="d-none d-md-block col-md-3 text-md-end pt-1 pt-md-0">
+                            <ul class="avatar-list">
+                              <li>
+                                <span class="avatar" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  title="Valerie Doe">
+                                  <img src="./assets/images/users/user-3.jpg" class="rounded-circle" alt="Avatar">
+                                </span>
+                              </li>
+                              <li>
+                                <span class="avatar" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  title="Valerie Doe">
+                                  <img src="./assets/images/users/user-4.jpg" class="rounded-circle" alt="Avatar">
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="collapse-1-3" class="accordion-collapse collapse" aria-labelledby="heading-1-3"
+                      data-bs-parent="#accordion-1">
+                      <div class="accordion-body">
+                        <div class="d-flex justify-content-end">
+                          <div class="col-md-10">
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                              Blanditiis
+                              asperiores sed
+                              consectetur
+                              placeat ut vitae ad sequi laudantium explicabo cupiditate non, deserunt quas sapiente
+                              fuga
+                              fugiat a
+                              ipsam adipisci odit.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- speakers -->
+  <section class="py-0">
+    <div class="container-full">
+      <div class="row g-0">
+        <div class="col-sm-6 col-md-6 col-lg-8 col-xl-3">
+          <div class="card h-100 bg-primary inverted">
+            <div class="card-wrap">
+              <div class="card-footer mt-auto">
+                <h2>Speakers</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-1.jpg')">
+            </figure>
+          </a>        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-2.jpg')">
+            </figure>
+          </a>        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-3.jpg')">
+            </figure>
+          </a>        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-4.jpg')">
+            </figure>
+          </a>        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-5.jpg')">
+            </figure>
+          </a>        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-6.jpg')">
+            </figure>
+          </a>        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a href="" class="card card-hover-gradient inverted equal-1-1">
+            <div class="card-wrap">
+              <div class="card-footer text-shadow mt-auto">
+                <h5 class="mb-0">John Doe</h5>
+                <span class="text-muted">Senior Product Designer</span>
+              </div>
+            </div>
+            <figure class="background" style="background-image: url('./assets/images/users/user-7.jpg')">
+            </figure>
+          </a>        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- price -->
+  <section class="py-20 mx-0 mx-lg-3">
+    <div class="container">
+      <div class="row justify-content-center mb-6">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-1">Get started with CUBE</h2>
+          <p class="lead text-secondary">Unlimited possibilities that come at an affordable price.</p>
+        </div>
+      </div>
+      <div class="row g-4 align-items-end">
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card bg-primary bordered inverted">
+            <div class="card-body">
+              <h2 class="h1 mb-10 fw-bold">$49</h2>
+              <ul class="list-unstyled mb-4">
+                <li class="py-1">Single site</li>
+                <li class="py-1">Use for personal or a client</li>
+                <li class="py-1">Use in a free end product <br> (Can have multiple users)</li>
+                <li class="py-1 text-muted"><s>Use in an end product that is “sold” <br> (Can have
+                    multiple paying
+                    users)</s></li>
+              </ul>
+              <div class="d-grid">
+                <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                  class="btn btn-white btn-with-icon rounded-pill">Buy Now <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0 separated">
+            <div class="col-md-6 bg-white">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="h1 mb-10 fw-bold">$149</h2>
+                  <ul class="list-unstyled mb-4">
+                    <li class="py-1">Multiple sites</li>
+                    <li class="py-1">Use for personal or a client</li>
+                    <li class="py-1">Use in a free end product <br> (Can have multiple users)</li>
+                    <li class="py-1 text-muted"><s>Use in an end product that is “sold” <br> (Can
+                        have multiple paying
+                        users)</s></li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                      class="btn btn-outline-primary btn-with-icon rounded-pill">Buy Now <i
+                        class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 bg-white">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="h1 mb-10 fw-bold">$449</h2>
+                  <ul class="list-unstyled mb-4">
+                    <li class="py-1">Single site</li>
+                    <li class="py-1">Use for personal or a client</li>
+                    <li class="py-1">Use in a free end product <br> (Can have multiple users)</li>
+                    <li class="py-1">Use in an end product that is “sold” <br> (Can have multiple
+                      paying users)</li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                      class="btn btn-outline-primary btn-with-icon rounded-pill">Buy Now <i
+                        class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- location -->
+  <section>
+    <div class="container py-20 foreground">
+      <div class="row g-0">
+        <div class="col-md-6 col-xl-5">
+          <div class="card bg-white">
+            <div class="card-header">
+              <h2>USA, New York, Broadway</h2>
+            </div>
+            <div class="card-body bg-white pt-0">
+              <ul class="list-group list-group-minimal">
+                <li class="list-group-item d-flex align-items-center mb-1">
+                  <div class="icon-box bg-opaque-primary rounded-circle me-2"><i
+                      class="bi bi-pin-angle text-primary"></i>
+                  </div>
+                  5th Avenue
+                </li>
+                <li class="list-group-item d-flex align-items-center mb-1">
+                  <div class="icon-box bg-opaque-primary rounded-circle me-2"><i
+                      class="bi bi-envelope text-primary"></i>
+                  </div>
+                  example@example.com
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <div class="icon-box bg-opaque-primary rounded-circle me-2"><i
+                      class="bi bi-telephone text-primary"></i>
+                  </div>
+                  (123) 456-7890
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer pt-0 text-end">
+              <a href="" class="action underline">Find directions <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="media h-100">
+      <span id="map1"></span>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="py-15 py-xl-20 bg-black inverted">
+    <div class="container">
+      <div class="row g-2 g-lg-6 mb-8">
+        <div class="col-lg-6">
+          <h4>5th Avenue, New York <br>USA 10255</h4>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <span class="h5">+1 (234) 567 890</span>
+        </div>
+      </div>
+      <div class="row mb-8">
+        <div class="col">
+          <hr>
+        </div>
+      </div>
+      <div class="row g-0 g-lg-6 text-secondary">
+        <div class="col-lg-6 text-lg-end order-lg-2">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="" class="text-reset">facebook</a></li>
+            <li class="list-inline-item ms-1"><a href="" class="text-reset">twitter</a></li>
+            <li class="list-inline-item ms-1"><a href="" class="text-reset">linkedin</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p>Copyrights © 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function initMap() {
+      var latlng = new google.maps.LatLng(40.702888, -74.012420);
+
+      var myOptions = {
+        zoom: 15,
+        center: latlng,
+        disableDefaultUI: true,
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ]
+      };
+
+      var map = new google.maps.Map(document.getElementById("map1"), myOptions);
+
+      map.panBy(-100, -40);
+
+      var myMarker = new google.maps.Marker(
+        {
+          position: latlng,
+          map: map,
+          icon: 'assets/images/svg/pin.svg'
+        });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAME5wJgLdn1aQSxC7-iWxJ3isuveK9Rv4&callback=initMap"
+    async defer></script>
+
+
+
+  <!-- javascript -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+  <script src="./assets/js/index.bundle.js"></script></body>
+
+</html>

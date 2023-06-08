@@ -1,0 +1,30 @@
+//
+// alert
+//
+
+.alert {
+  overflow: hidden;
+  border-width: 0 0 0 rem(2);
+
+  > .bi:not(.alert-close) {
+    position: absolute;
+    transform: rotate(10deg);
+    width: 1em;
+    height: 1em;
+    top: -0.25em;
+    left: -0.25em;
+    font-size: rem(200);
+    opacity: 0.1;
+  }
+}
+
+.alert-close {
+  position: absolute;
+  top: 50%;
+  right: rem(32);
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  font-size: rem(24);
+  cursor: pointer;
+}

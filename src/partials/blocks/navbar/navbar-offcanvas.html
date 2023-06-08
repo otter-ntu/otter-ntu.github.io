@@ -1,0 +1,394 @@
+<nav class="navbar navbar-expand-lg {{class}}">
+  <div class="container">
+    <a href="{{root}}/index.html" class="navbar-brand"><img src="{{root}}{{logo}}" alt="Logo"></a>
+
+    <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+      {{#if shop}}
+      <li class="nav-item">
+        <a class="nav-link nav-icon" data-bs-toggle="offcanvas" href="#offcanvasCart" role="button"
+          aria-controls="offcanvasCart">
+          <i class="bi bi-cart2"></i>
+        </a>
+      </li>
+      {{/if}}
+      {{#if account}}
+      <li class="nav-item d-lg-none">
+        <a class="nav-link nav-icon" href="" role="button" data-bs-toggle="collapse" data-bs-target="#userNav"
+          aria-expanded="false">
+          <i class="bi bi-person"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <a class="nav-link nav-icon" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="bi bi-person"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item active" href="./account.html">Dashboard</a></li>
+          <li><a class="dropdown-item " href="./account-settings.html">Settings</a></li>
+          <li><a class="dropdown-item " href="./account-orders.html">Orders</a></li>
+          <li><a class="dropdown-item " href="./account-billing.html">Billing</a></li>
+          <li><a class="dropdown-item text-red" href="#">Log Out</a></li>
+        </ul>
+      </li>
+      {{/if}}
+      <li class="nav-item">
+        <a class="nav-link nav-icon" data-bs-toggle="offcanvas" href="#offcanvasNav" role="button"
+          aria-controls="offcanvasNav">
+          <span class="bi bi-list"></span>
+        </a>
+      </li>
+      {{#if button}}
+      <li class="nav-item d-none d-lg-block">
+        <a href="" class="btn {{button}} rounded-pill ms-2">
+          Buy Cube
+        </a>
+      </li>
+      {{/if}}
+    </ul>
+
+    <!-- mobile user menu -->
+    {{#if account}}
+    <div class="collapse account-collapse" id="userNav" data-bs-parent="#mainNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Billing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log Out</a>
+        </li>
+      </ul>
+    </div>
+    {{/if}}
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="nav nav-minimal" id="toc-nav">
+      <li class="nav-item">
+        <a class="nav-link fs-4" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="menu-1">Landings</a>
+        <div class="collapse" id="menu-1" data-bs-parent="#toc-nav">
+          <ul class="nav nav-minimal nav-minimal-columns">
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'startup'}}active{{/equals}}" href="{{root}}/startup.html">Startup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'saas'}}active{{/equals}}" href="{{root}}/saas.html">Saas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'coworking'}}active{{/equals}}"
+                href="{{root}}/coworking.html">Coworking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'job-listing'}}active{{/equals}}" href="{{root}}/job-listing.html">Job
+                Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'agency'}}active{{/equals}}" href="{{root}}/agency.html">Agency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'blog'}}active{{/equals}}" href="{{root}}/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'product'}}active{{/equals}}" href="{{root}}/product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'app'}}active{{/equals}}" href="{{root}}/app.html">App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'shop'}}active{{/equals}}" href="{{root}}/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'event'}}active{{/equals}}" href="{{root}}/event.html">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'course'}}active{{/equals}}" href="{{root}}/course.html">Course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'service'}}active{{/equals}}" href="{{root}}/service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'software'}}active{{/equals}}"
+                href="{{root}}/software.html">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'documentation'}}active{{/equals}}"
+                href="{{root}}/documentation.html">Documentation</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-4" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="menu-2">Pages</a>
+        <div class="collapse" id="menu-2" data-bs-parent="#toc-nav">
+          <ul class="nav nav-minimal nav-minimal-columns">
+            <li class="nav-item">
+              <span class="nav-label">Company</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'about'}}active{{/equals}}" href="{{root}}/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'pricing'}}active{{/equals}}" href="{{root}}/pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'faq'}}active{{/equals}}" href="{{root}}/faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'terms'}}active{{/equals}}" href="{{root}}/terms.html">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'services'}}active{{/equals}}"
+                href="{{root}}/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'job-listing'}}active{{/equals}}" href="{{root}}/job-listing.html">Job
+                Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'job-post'}}active{{/equals}}" href="{{root}}/job-post.html">Job
+                Post</a>
+            </li>
+
+            <li class="nav-item">
+              <span class="nav-label">Portfolio</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'portfolio-grid'}}active{{/equals}}"
+                href="{{root}}/portfolio-grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'portfolio-list'}}active{{/equals}}"
+                href="{{root}}/portfolio-list.html">List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'case-study'}}active{{/equals}}" href="{{root}}/case-study.html">Case
+                Study</a>
+            </li>
+
+            <li class="nav-item">
+              <span class="nav-label">Blog</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'blog-listing'}}active{{/equals}}"
+                href="{{root}}/blog-listing.html">Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'blog-post'}}active{{/equals}}"
+                href="{{root}}/blog-post.html">Post</a>
+            </li>
+
+            <li class="nav-item">
+              <span class="nav-label">Contact</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'contact'}}active{{/equals}}" href="{{root}}/contact.html">Classic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'contact-location'}}active{{/equals}}"
+                href="{{root}}/contact-location.html">Location</a>
+            </li>
+
+            <li class="nav-item">
+              <span class="nav-label">Utilities</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active '404'}}active{{/equals}}" href="{{root}}/404.html">404</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'coming-soon'}}active{{/equals}}"
+                href="{{root}}/coming-soon.html">Coming Soon</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-4" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="menu-3">Account</a>
+        <div class="collapse" id="menu-3" data-bs-parent="#toc-nav">
+          <ul class="nav nav-minimal nav-minimal-columns">
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'dashboard'}}active{{/equals}}"
+                href="{{root}}/account.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'settings'}}active{{/equals}}"
+                href="{{root}}/account-settings.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'orders'}}active{{/equals}}"
+                href="{{root}}/account-orders.html">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'billing'}}active{{/equals}}"
+                href="{{root}}/account-billing.html">Billing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'sign-in'}}active{{/equals}}" href="{{root}}/sign-in.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'register'}}active{{/equals}}"
+                href="{{root}}/register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'forgot-password'}}active{{/equals}}"
+                href="{{root}}/forgot-password.html">Forgot Password</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-4" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="menu-4">Shop</a>
+        <div class="collapse" id="menu-4" data-bs-parent="#toc-nav">
+          <ul class="nav nav-minimal nav-minimal-columns">
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'shop-product'}}active{{/equals}}"
+                href="{{root}}/shop-product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'shop-listing'}}active{{/equals}}"
+                href="{{root}}/shop-listing.html">Listing Full</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'shop-listing-sidebar'}}active{{/equals}}"
+                href="{{root}}/shop-listing-sidebar.html">Listing Sidebar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'shop-cart'}}active{{/equals}}"
+                href="{{root}}/shop-cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'shop-checkout'}}active{{/equals}}"
+                href="{{root}}/shop-checkout.html">Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-4" href="#menu-5" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="menu-5">Docs</a>
+        <div class="collapse" id="menu-5" data-bs-parent="#toc-nav">
+          <ul class="nav nav-minimal nav-minimal-columns">
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'docs'}}active{{/equals}}" href="{{root}}/docs/index.html">Get
+                Started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{#equals active 'components'}}active{{/equals}}"
+                href="{{root}}/docs/accordion.html">Components</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="offcanvas-footer">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="" class="text-muted text-primary-hover"><i
+            class="bi bi-facebook fs-lg"></i></a></li>
+      <li class="list-inline-item ms-1"><a href="" class="text-muted text-primary-hover"><i
+            class="bi bi-twitter fs-lg"></i></a></li>
+      <li class="list-inline-item ms-1"><a href="" class="text-muted text-primary-hover"><i
+            class="bi bi-linkedin fs-lg"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+{{#if shop}}
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasCartLabel">Shopping Cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li>
+        <div class="row g-2 g-lg-3 align-items-center">
+          <a href="" class="col-3"><img class="img-fluid" src="./assets/images/products/product-1.jpg"
+              alt="Product"></a>
+          <div class="col">
+            <a href="" class="text-black text-primary-hover lead">Bluetooth Speaker</a>
+            <ul class="list-inline text-muted">
+              <li class="list-inline-item">Price: <span class="text-secondary">$90</span></li>
+              <li class="list-inline-item">Color: <span class="text-secondary">Blue</span></li>
+              <li class="list-inline-item">Qty:
+                <div class="counter text-secondary" data-counter="qty-1">
+                  <span class="counter-minus bi bi-dash"></span>
+                  <input type="number" name="qty-1" class="counter-value" value="0" min="0" max="10">
+                  <span class="counter-plus bi bi-plus"></span>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="text-red underline">Remove</a>
+          </div>
+        </div>
+      </li>
+      <li class="mt-4">
+        <div class="row g-2 g-lg-3 align-items-center">
+          <a href="" class="col-3"><img class="img-fluid" src="./assets/images/products/product-2.jpg"
+              alt="Product"></a>
+          <div class="col">
+            <a href="" class="text-black text-primary-hover lead">Bluetooth Speaker</a>
+            <ul class="list-inline text-muted">
+              <li class="list-inline-item">Price: <span class="text-secondary">$90</span></li>
+              <li class="list-inline-item">Color: <span class="text-secondary">Blue</span></li>
+              <li class="list-inline-item">Qty:
+                <div class="counter text-secondary" data-counter="qty-1">
+                  <span class="counter-minus bi bi-dash"></span>
+                  <input type="number" name="qty-1" class="counter-value" value="0" min="0" max="10">
+                  <span class="counter-plus bi bi-plus"></span>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="text-red underline">Remove</a>
+          </div>
+        </div>
+      </li>
+      <li class="mt-4">
+        <div class="row g-2 g-lg-3 align-items-center">
+          <a href="" class="col-3"><img class="img-fluid" src="./assets/images/products/product-3.jpg"
+              alt="Product"></a>
+          <div class="col">
+            <a href="" class="text-black text-primary-hover lead">Bluetooth Speaker</a>
+            <ul class="list-inline text-muted">
+              <li class="list-inline-item">Price: <span class="text-secondary">$90</span></li>
+              <li class="list-inline-item">Color: <span class="text-secondary">Blue</span></li>
+              <li class="list-inline-item">Qty:
+                <div class="counter text-secondary" data-counter="qty-1">
+                  <span class="counter-minus bi bi-dash"></span>
+                  <input type="number" name="qty-1" class="counter-value" value="0" min="0" max="10">
+                  <span class="counter-plus bi bi-plus"></span>
+                </div>
+              </li>
+            </ul>
+            <a href="" class="text-red underline">Remove</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="offcanvas-footer">
+    <div class="d-grid gap-1">
+      <a href="" class="btn btn-outline-light rounded-pill">View Cart</a>
+      <a href="" class="btn btn-primary rounded-pill">Proceed to Checkout</a>
+    </div>
+  </div>
+</div>
+{{/if}}

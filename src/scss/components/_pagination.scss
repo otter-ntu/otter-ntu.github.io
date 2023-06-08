@@ -1,0 +1,57 @@
+//
+// pagination
+//
+
+.pagination {
+  display: inline-flex;
+  border-radius: rem(40);
+
+  .page-item {
+    + .page-item {
+      margin-left: rem(4);
+    }
+  }
+
+  .page-link {
+    padding: 0 rem(16);
+    text-align: center;
+    color: inherit;
+    border-radius: rem(80);
+    min-width: calc(
+      #{$input-btn-line-height * 1em} + #{$input-btn-padding-y * 2}
+    );
+    height: calc(#{$input-btn-line-height * 1em} + #{$input-btn-padding-y * 2});
+    line-height: calc(
+      #{$input-btn-line-height * 1em} + #{$input-btn-padding-y * 2}
+    );
+    border-color: transparent;
+  }
+
+  &[class*="-sm"] {
+    .page-link {
+      min-width: calc(
+        #{$input-btn-line-height * 1em} + #{$input-btn-padding-y-sm * 2}
+      );
+      height: calc(
+        #{$input-btn-line-height * 1em} + #{$input-btn-padding-y-sm * 2}
+      );
+      line-height: calc(
+        #{$input-btn-line-height * 1em} + #{$input-btn-padding-y-sm * 2}
+      );
+    }
+  }
+
+  &[class*="-lg"] {
+    .page-link {
+      min-width: calc(
+        #{$input-btn-line-height * 1em} + #{$input-btn-padding-y-lg * 2}
+      );
+      height: calc(
+        #{$input-btn-line-height * 1em} + #{$input-btn-padding-y-lg * 2}
+      );
+      line-height: calc(
+        #{$input-btn-line-height * 1em} + #{$input-btn-padding-y-lg * 2}
+      );
+    }
+  }
+}

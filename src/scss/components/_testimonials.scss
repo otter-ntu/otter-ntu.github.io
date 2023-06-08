@@ -1,0 +1,31 @@
+//
+// testimonials
+//
+
+// rating
+.rating {
+  display: inline-flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    &:not(:first-child) {
+      margin-left: 0.4em;
+    }
+  }
+
+  i {
+    color: inherit;
+    font-size: inherit;
+  }
+}
+
+// blockquote
+.blockquote-footer {
+  margin: 0;
+
+  &::before {
+    display: none;
+  }
+}

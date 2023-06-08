@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Avatars - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="avatars"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Avatars</h1>
+              <p class="lead text-secondary">Style and group avatars with a single component.</p>
+            </section>
+
+
+            <!-- size -->
+            <section>
+              <h3 class="fs-4">Size</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <span class="avatar avatar-lg">
+                    <img src="../assets/images/users/user-1.jpg" class="rounded-circle" alt="Avatar">
+                  </span>
+                  <span class="avatar">
+                    <img src="../assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                  </span>
+                  <span class="avatar avatar-sm">
+                    <img src="../assets/images/users/user-3.jpg" class="rounded-circle" alt="Avatar">
+                  </span>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <span class="avatar avatar-lg">
+                      <img src="../assets/images/users/user-1.jpg" class="rounded-circle" alt="Avatar">
+                    </span>
+                    <span class="avatar">
+                      <img src="../assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                    </span>
+                    <span class="avatar avatar-sm">
+                      <img src="../assets/images/users/user-3.jpg" class="rounded-circle" alt="Avatar">
+                    </span>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- initials -->
+            <section>
+              <h3 class="fs-4">Initials</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <span class="avatar avatar-lg rounded-circle bg-primary">
+                    <span>JS</span>
+                  </span>
+                  <span class="avatar avatar rounded-circle bg-primary">
+                    <span>VB</span>
+                  </span>
+                  <span class="avatar avatar-sm rounded-circle bg-primary">
+                    <span>T</span>
+                  </span>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <span class="avatar avatar-lg rounded-circle">
+                      <span>JS</span>
+                    </span>
+                    <span class="avatar avatar rounded-circle">
+                      <span>VB</span>
+                    </span>
+                    <span class="avatar avatar-sm rounded-circle">
+                      <span>T</span>
+                    </span>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- group -->
+            <section>
+              <h3 class="fs-4">Grouped</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <ul class="avatar-list">
+                    <li>
+                      <span class="avatar avatar-lg rounded-circle bg-primary">
+                        <span>JS</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="avatar avatar-lg">
+                        <img src="../assets/images/users/user-1.jpg" class="rounded-circle" alt="Avatar">
+                      </span>
+                    </li>
+                    <li>
+                      <span class="avatar avatar-lg">
+                        <img src="../assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <ul class="avatar-list">
+                      <li>
+                        <span class="avatar avatar-lg rounded-circle">
+                          <span>JS</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="avatar avatar-lg">
+                          <img src="../assets/images/users/user-1.jpg" class="rounded-circle" alt="Avatar">
+                        </span>
+                      </li>
+                      <li>
+                        <span class="avatar avatar-lg">
+                          <img src="../assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                        </span>
+                      </li>
+                    </ul>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

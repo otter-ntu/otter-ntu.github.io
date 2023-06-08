@@ -1,0 +1,43 @@
+//
+// sidebar
+//
+
+.offcanvas-end {
+  width: 100%;
+  padding: rem(40);
+  border: 0;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 50vw;
+    padding: rem(80);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 35vw;
+    padding: rem(80);
+  }
+
+  .offcanvas-body {
+    padding: 0;
+  }
+}
+
+.offcanvas-wrap {
+  transition: transform 0.4s ease-in-out;
+}
+
+.offcanvas-push {
+  .offcanvas-wrap {
+    transform: translateX(rem(-100));
+  }
+}
+
+.offcanvas-header {
+  margin: 0 0 rem(32) 0;
+  padding: 0 0 rem(32) 0;
+  border-bottom: $border-width solid $border-color;
+}
+
+.offcanvas-title {
+  font-size: $font-size-lg;
+}

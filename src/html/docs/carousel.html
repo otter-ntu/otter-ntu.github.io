@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Carousel - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="carousel"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Carousel</h1>
+              <p class="lead text-secondary">Touch enabled Javascript plugin that lets you create a beautiful responsive
+                carousel slider.</p>
+              <a href="https://ganlanyuan.github.io/tiny-slider/" class="underline action">Plugin documentation <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+
+            <!-- single -->
+            <section>
+              <h3 class="fs-4">Single Slide</h3>
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="carousel carousel-with-nav">
+                    <div data-carousel='{"mouseDrag": true, "gutter": 40, "loop": true, "items": 1, "nav": true}'>
+                      <div>
+                        <figure class="equal-16-10" style="background-image: url('../assets/images/small-1.jpg')">
+                        </figure>
+                      </div>
+
+                      <div>
+                        <figure class="equal-16-10" style="background-image: url('../assets/images/small-2.jpg')">
+                        </figure>
+                      </div>
+
+                      <div>
+                        <figure class="equal-16-10" style="background-image: url('../assets/images/small-3.jpg')">
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="carousel carousel-with-nav">
+                      <div data-carousel='{"mouseDrag": true, "gutter": 40, "loop": true, "items": 1, "nav": true}'>
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-1.jpg')">
+                          </figure>
+                        </div>
+  
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-2.jpg')">
+                          </figure>
+                        </div>
+  
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-3.jpg')">
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- multiple -->
+            <section>
+              <h3 class="fs-4">Multiple Slides</h3>
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="carousel">
+                    <div
+                      data-carousel='{"mouseDrag": true, "gutter": 20, "loop": true, "items": 1, "nav": false, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 2}, "1200": {"items": 3}}}'>
+                      <div>
+                        <figure class="equal-1-1" style="background-image: url('../assets/images/small-1.jpg')">
+                        </figure>
+                      </div>
+
+                      <div>
+                        <figure class="equal-1-1" style="background-image: url('../assets/images/small-2.jpg')">
+                        </figure>
+                      </div>
+
+                      <div>
+                        <figure class="equal-1-1" style="background-image: url('../assets/images/small-3.jpg')">
+                        </figure>
+                      </div>
+
+                      <div>
+                        <figure class="equal-1-1" style="background-image: url('../assets/images/small-4.jpg')">
+                        </figure>
+                      </div>
+
+                      <div>
+                        <figure class="equal-1-1" style="background-image: url('../assets/images/small-5.jpg')">
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="carousel">
+                      <div
+                        data-carousel='{"mouseDrag": true, "gutter": 20, "loop": true, "items": 1, "nav": false, "responsive": {"0": {"items": 1}, "768": {"items": 2}, "992": {"items": 2}, "1200": {"items": 3}}}'>
+                        <div>
+                          <figure class="equal-1-1" style="background-image: url('../assets/images/small-1.jpg')">
+                          </figure>
+                        </div>
+  
+                        <div>
+                          <figure class="equal-1-1" style="background-image: url('../assets/images/small-2.jpg')">
+                          </figure>
+                        </div>
+  
+                        <div>
+                          <figure class="equal-1-1" style="background-image: url('../assets/images/small-3.jpg')">
+                          </figure>
+                        </div>
+  
+                        <div>
+                          <figure class="equal-1-1" style="background-image: url('../assets/images/small-4.jpg')">
+                          </figure>
+                        </div>
+  
+                        <div>
+                          <figure class="equal-1-1" style="background-image: url('../assets/images/small-5.jpg')">
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- multiple -->
+            <section>
+              <h3 class="fs-4">Custom</h3>
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white overflow-hidden">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="carousel carousel-big-controls carousel-visible">
+                        <div data-carousel='{"mouseDrag": true, "gutter": 40, "loop": true, "items": 1, "nav": false}'>
+                          <div>
+                            <figure class="equal-16-10" style="background-image: url('../assets/images/small-1.jpg')">
+                            </figure>
+                          </div>
+
+                          <div>
+                            <figure class="equal-16-10" style="background-image: url('../assets/images/small-2.jpg')">
+                            </figure>
+                          </div>
+
+                          <div>
+                            <figure class="equal-16-10" style="background-image: url('../assets/images/small-3.jpg')">
+                            </figure>
+                          </div>
+
+                          <div>
+                            <figure class="equal-16-10" style="background-image: url('../assets/images/small-4.jpg')">
+                            </figure>
+                          </div>
+
+                          <div>
+                            <figure class="equal-16-10" style="background-image: url('../assets/images/small-5.jpg')">
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="carousel carousel-big-controls carousel-visible">
+                      <div data-carousel='{"mouseDrag": true, "gutter": 40, "loop": true, "items": 1, "nav": false}'>
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-1.jpg')">
+                          </figure>
+                        </div>
+
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-2.jpg')">
+                          </figure>
+                        </div>
+
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-3.jpg')">
+                          </figure>
+                        </div>
+
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-4.jpg')">
+                          </figure>
+                        </div>
+
+                        <div>
+                          <figure class="equal-16-10" style="background-image: url('../assets/images/small-5.jpg')">
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

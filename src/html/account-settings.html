@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Settings - Account"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="settings"
+  account="true"
+  shop="true"
+  button="btn-primary"
+  }}
+
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <aside class="col-lg-3 split-sidebar">
+            <nav class="sticky-top d-none d-lg-block">
+              <ul class="nav nav-minimal flex-column" id="toc-nav">
+                <li class="nav-item">
+                  <a class="nav-link fs-lg" href="./account.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-lg active" href="./account-settings.html">Settings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-lg" href="./account-orders.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-lg" href="./account-billing.html">Billing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-lg text-red" href="sign-in.html">Sign Out</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="col-lg-9 split-content">
+
+
+            <div class="row">
+              <div class="col-lg-10">
+                <h1>Settings</h1>
+                <div class="alert alert-primary mb-0" role="alert">
+                  Please update your notification settings.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- profile -->
+            <section>
+              <div class="row">
+                <div class="col-lg-10">
+                  <h3 class="fs-4">Profile</h3>
+                  <div class="card bg-opaque-white">
+                    <div class="card-body bg-white">
+                      <form class="row g-2 g-lg-3">
+                        <div class="col-md-12">
+                          <label for="inputCountry" class="form-label">Country</label>
+                          <select id="inputCountry" class="form-select">
+                            <option selected>Germany</option>
+                            <option>Spain</option>
+                            <option>France</option>
+                            <option>Portugal</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                        </div>
+                        <div class="col-md-8">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity" placeholder="City" value="Munich">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip" placeholder="Zip Code">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputStateProvince" class="form-label">State / Province</label>
+                          <input type="text" class="form-control" id="inputStateProvince"
+                            placeholder="State / Province">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputCountryCode" class="form-label">Country Code</label>
+                          <input type="text" class="form-control" id="inputCountryCode" placeholder="Country Code">
+                        </div>
+                        <div class="col-md-8">
+                          <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- notifications -->
+            <section>
+              <div class="row">
+                <div class="col-lg-10">
+                  <h3 class="fs-4">Notifications</h3>
+                  <div class="card bg-opaque-white overflow-hidden">
+                    <div class="card-body bg-white">
+                      <ul class="list-unstyled">
+                        <li class="mb-4">
+                          <div class="form-check form-switch form-switch-right">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheck-1" checked>
+                            <label class="form-check-label" for="flexSwitchCheck-1">Someone comments on one of my
+                              posts</label>
+                          </div>
+                        </li>
+                        <li class="mb-4">
+                          <div class="form-check form-switch form-switch-right">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheck-2">
+                            <label class="form-check-label" for="flexSwitchCheck-2">Someone mentions me</label>
+                          </div>
+                        </li>
+                        <li class="mb-4">
+                          <div class="form-check form-switch form-switch-right">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheck-3">
+                            <label class="form-check-label" for="flexSwitchCheck-3">I receive invitations to invite new
+                              members</label>
+                          </div>
+                        </li>
+                        <li class="mb-4">
+                          <div class="form-check form-switch form-switch-right">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheck-4">
+                            <label class="form-check-label" for="flexSwitchCheck-4">My invitations are about to
+                              expire</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check form-switch form-switch-right">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheck-5">
+                            <label class="form-check-label" for="flexSwitchCheck-5">Anyone follows me</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- password -->
+            <section>
+              <div class="row">
+                <div class="col-lg-10">
+                  <h3 class="fs-4">Password</h3>
+                  <div class="card bg-opaque-white">
+                    <div class="card-body bg-white">
+                      <form class="row g-2 g-lg-3">
+                        <div class="col-md-12">
+                          <label for="inputCurrentPass" class="form-label">Current Password</label>
+                          <input type="password" class="form-control" id="inputCurrentPass">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputNewPass" class="form-label">New Password</label>
+                          <input type="password" class="form-control" id="inputNewPass">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputRepeatNewPass" class="form-label">Repeat New Password</label>
+                          <input type="password" class="form-control" id="inputRepeatNewPass">
+                        </div>
+                        <div class="col-md-12">
+                          <a href="" class="btn btn-primary">Change password</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    {{> footer/footer-1
+    logo="/assets/images/logo/logo-dark.svg"
+    class="py-15 py-xl-20 border-top"
+    btnClass="btn-primary"
+    }}
+  </div>
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+//
+// mixins & functions
+//
+
+// rem calculator
+@function rem($size) {
+  $rem: $size / 16;
+  @return #{$rem}rem;
+}
+
+// vendor prefixes
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+// helpers
+@mixin translate($vertical, $horizontal) {
+  transform: translate($vertical, $horizontal);
+}
+
+@mixin selection($type) {
+  user-select: $type;
+}
+
+@mixin text-shadow($size: 16px) {
+  text-shadow: 0px 0px $size rgba($black, 0.4);
+}
+
+@mixin translateX($value) {
+  transform: translateX($value);
+}
+
+@mixin translateY($value) {
+  transform: translateY($value);
+}
+
+@mixin transition($time: 0.2s, $type: all, $delay: 0s) {
+  transition: $type $time;
+  transition-delay: $delay;
+}
+
+@mixin nofocus {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+@mixin transitionfix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+// placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

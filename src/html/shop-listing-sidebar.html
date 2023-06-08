@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Listing - Shop"}}
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light border-bottom"
+  active="shop-listing-sidebar"
+  account="true"
+  shop="true"
+  button="btn-outline-light"
+  }}
+
+
+  <div class="offcanvas-wrap">
+
+    <section class="py-15 py-xl-20">
+      <div class="container mt-5">
+        <div class="row g-3 g-md-5 align-items-end mb-5">
+          <div class="col-md-6">
+            <h1 class="mb-2">Equipment</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item"><a href="#">Category</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Equipment</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <div class="dropdown">
+                  <a class="underline text-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Price high to low <i class="bi bi-chevron-down"></i>
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-3 d-none d-xl-block">
+
+            <div class="widget">
+              <span class="d-flex eyebrow text-muted mb-2">Brands</span>
+              <ul class="list-unstyled">
+                <li>
+                  <div class="form-check form-check-minimal">
+                    <input class="form-check-input" type="checkbox" value="" id="brand-1" checked>
+                    <label class="form-check-label" for="brand-1">
+                      Vans
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-minimal">
+                    <input class="form-check-input" type="checkbox" value="" id="brand-2">
+                    <label class="form-check-label" for="brand-2">
+                      Carhart WIP
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-minimal">
+                    <input class="form-check-input" type="checkbox" value="" id="brand-3">
+                    <label class="form-check-label" for="brand-3">
+                      Carhart WIP
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="widget mt-5">
+              <span class="d-flex eyebrow text-muted mb-2">Color</span>
+              <ul class="list-unstyled">
+                <li>
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-1">
+                    <label class="form-check-label" for="color-1">
+                      <span class="bg-red"></span> Red
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-2">
+                    <label class="form-check-label" for="color-2">
+                      <span class="bg-blue"></span> Blue
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-3">
+                    <label class="form-check-label" for="color-3">
+                      <span class="bg-green"></span> Green
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-4">
+                    <label class="form-check-label" for="color-4">
+                      <span class="bg-yellow"></span> Yellow
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="widget mt-5">
+              <span class="d-flex eyebrow text-muted mb-2">Price</span>
+              <div class="range-slider" data-range='{"decimals": 0,"step": 1,"connect": true, "start" : [20,80], "range" : {"min": 0, "max" :
+                100}}'></div>
+              <div class="range-slider-selection">Price: <span class="range-slider-value" id="range-min"></span>
+                &mdash; <span class="range-slider-value" id="range-max"></span></div>
+            </div>
+          </div>
+          <div class="col-xl-9">
+            <div class="row g-3">
+              <div class="col-md-6 col-xl-4">
+                {{> components/product
+                (object
+                title="Watch"
+                price="$100"
+                image=( array "assets/images/products/product-1.jpg" "assets/images/products/product-1-2.jpg")
+                )
+                }}
+              </div>
+              <div class="col-md-6 col-xl-4">
+                {{> components/product
+                (object
+                title="Black Karlo Backpack"
+                price="$88"
+                image=( array "assets/images/products/product-2.jpg" "assets/images/products/product-2-2.jpg")
+                )
+                }}
+              </div>
+              <div class="col-md-6 col-xl-4">
+                {{> components/product
+                (object
+                title="Black Closca Helmet"
+                price="$132"
+                image=( array "assets/images/products/product-3.jpg" "assets/images/products/product-3-2.jpg")
+                )
+                }}
+              </div>
+              <div class="col-md-6 col-xl-4">
+                {{> components/product
+                (object
+                title="Speaker"
+                price="$100"
+                image=( array "assets/images/products/product-4.jpg" "assets/images/products/product-4-2.jpg")
+                )
+                }}
+              </div>
+              <div class="col-md-6 col-xl-4">
+                {{> components/product
+                (object
+                title="Gravel Black Sigg Water Bottle"
+                price="$23"
+                image=( array "assets/images/products/product-5.jpg" "assets/images/products/product-5-2.jpg")
+                )
+                }}
+              </div>
+              <div class="col-md-6 col-xl-4">
+                {{> components/product
+                (object
+                title="Headphones"
+                price="$100"
+                image=( array "assets/images/products/product-6.jpg" "assets/images/products/product-6-2.jpg")
+                )
+                }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col text-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    {{> footer/footer-1
+    logo="/assets/images/logo/logo-dark.svg"
+    class="py-15 py-xl-20 border-top"
+    btnClass="btn-primary"
+    }}
+  </div>
+
+  <div class="position-fixed bottom-0 end-0 p-2 level-1">
+    <button class="btn btn-white btn-icon d-lg-none rounded-pill shadow" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasFilter" aria-controls="offcanvasFilter">
+      <i class="bi bi-justify-right fs-4"></i>
+    </button>
+  </div>
+
+
+  <!-- offcanvas - filters -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilter" aria-labelledby="offcanvasFilterLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasFilterLabel">Filters</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="widget">
+        <span class="d-flex eyebrow text-muted mb-2">Brands</span>
+        <ul class="list-unstyled">
+          <li>
+            <div class="form-check form-check-minimal">
+              <input class="form-check-input" type="checkbox" value="" id="brand-mob-1">
+              <label class="form-check-label" for="brand-mob-1">
+                Vans
+              </label>
+            </div>
+          </li>
+          <li class="mt-1">
+            <div class="form-check form-check-minimal">
+              <input class="form-check-input" type="checkbox" value="" id="brand-mob-2">
+              <label class="form-check-label" for="brand-mob-2">
+                Carhart WIP
+              </label>
+            </div>
+          </li>
+          <li class="mt-1">
+            <div class="form-check form-check-minimal">
+              <input class="form-check-input" type="checkbox" value="" id="brand-mob-3">
+              <label class="form-check-label" for="brand-mob-3">
+                Carhart WIP
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="widget mt-5">
+        <span class="d-flex eyebrow text-muted mb-2">Color</span>
+        <ul class="list-unstyled">
+          <li>
+            <div class="form-check form-check-color">
+              <input class="form-check-input" type="checkbox" value="" id="color-mob-1">
+              <label class="form-check-label" for="color-mob-1">
+                <span class="bg-red"></span> Red
+              </label>
+            </div>
+          </li>
+          <li class="mt-1">
+            <div class="form-check form-check-color">
+              <input class="form-check-input" type="checkbox" value="" id="color-mob-2">
+              <label class="form-check-label" for="color-mob-2">
+                <span class="bg-blue"></span> Blue
+              </label>
+            </div>
+          </li>
+          <li class="mt-1">
+            <div class="form-check form-check-color">
+              <input class="form-check-input" type="checkbox" value="" id="color-mob-3">
+              <label class="form-check-label" for="color-mob-3">
+                <span class="bg-green"></span> Green
+              </label>
+            </div>
+          </li>
+          <li class="mt-1">
+            <div class="form-check form-check-color">
+              <input class="form-check-input" type="checkbox" value="" id="color-mob-4">
+              <label class="form-check-label" for="color-mob-4">
+                <span class="bg-yellow"></span> Yellow
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="widget mt-5">
+        <span class="d-flex eyebrow text-muted mb-2">Price</span>
+        <div class="range-slider" data-range='{"decimals": 0,"step": 1,"connect": true, "start" : [20,80], "range" : {"min": 0, "max" :
+            100}}'></div>
+        <div class="range-slider-selection">Price: <span class="range-slider-value range-min"></span>
+          &mdash; <span class="range-slider-value range-max"></span></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

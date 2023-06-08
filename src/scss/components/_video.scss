@@ -1,0 +1,51 @@
+//
+// video
+//
+
+.plyr {
+  --plyr-color-main: var(--primary);
+
+  .plyr__controls {
+    padding: rem(24);
+  }
+
+  .plyr__control--overlaid {
+    width: rem(100);
+    height: rem(100);
+    padding: 0;
+    background: $black;
+
+    &:hover {
+      background: rgba($black, 0.75);
+    }
+
+    svg {
+      @include translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+
+  &.plyr--stopped {
+    .plyr__controls {
+      opacity: 0;
+    }
+  }
+
+  .plyr__poster {
+    @include transition;
+    background-size: cover;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.plyr__video-embed {
+  position: relative;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

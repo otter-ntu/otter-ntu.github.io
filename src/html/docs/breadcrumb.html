@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Breadcrumb - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="breadcrumb"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Breadcrumbs</h1>
+              <p class="lead text-secondary">Indicate the current page’s location within a navigational hierarchy that
+                automatically adds separators via CSS.</p>
+              <a href="https://getbootstrap.com/docs/5.0/components/breadcrumb/" class="underline action">Bootstrap
+                documentation <i class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <!-- example -->
+            <section>
+              <h3 class="fs-4">Example</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+
+                  <nav aria-label="breadcrumb" class="mt-2">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+
+                  <nav aria-label="breadcrumb" class="mt-2">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+
+                  <nav aria-label="breadcrumb" class="mt-2">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+
+                  <nav aria-label="breadcrumb" class="mt-2">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav></script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- dividers -->
+            <section>
+              <h3 class="fs-4">Dividers</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                      </ol>
+                    </nav>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

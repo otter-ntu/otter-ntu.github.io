@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Contact - Location"}}
+</head>
+
+<body>
+
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-light.svg"
+  class="navbar-sticky navbar-dark"
+  active="contact-location"
+  button="btn-outline-white"
+  }}
+
+
+  <!-- map -->
+  <section class="bg-black inverted overflow-hidden">
+    <div class="container d-flex flex-column py-15 min-vh-75 level-3">
+      <div class="row align-items-center justify-content-between mt-auto">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="mb-1 lh-1">New York, 5th Avenue</h1>
+          <span class="eyebrow text-secondary">Main office</span>
+        </div>
+      </div>
+    </div>
+    <div class="background background-dimm" data-top-top="transform: scale(1);"
+      data-top-bottom="transform: scale(1.1);">
+      <div id="map1" class="map"></div>
+    </div>
+  </section>
+
+
+  <!-- locations -->
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8 col-xl-6">
+          <h2 class="fw-light">Our <span class="fw-bold">office locations</span> worldwide.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-primary inverted card-hover-reveal">
+            <div class="card-header">
+              <i class="bi bi-geo-alt-fill mb-4 fs-3"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="mb-2">New York, USA</h4>
+              <span class="fs-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </span>
+              <ul class="list-unstyled mt-3">
+                <li>Phone: +1 234 567 89</li>
+                <li>Fax: +1 234 567 89</li>
+              </ul>
+            </div>
+            <span class="background background-overlay" style="background-image: url('./assets/images/newyork.jpg')">
+            </span>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-green inverted card-hover-reveal">
+            <div class="card-header">
+              <i class="bi bi-geo-alt-fill mb-4 fs-3"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="mb-2">Paris, France</h4>
+              <span class="fs-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </span>
+              <ul class="list-unstyled mt-3">
+                <li>Phone: +1 234 567 89</li>
+                <li>Fax: +1 234 567 89</li>
+              </ul>
+            </div>
+            <span class="background background-overlay" style="background-image: url('./assets/images/paris.jpg')">
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  {{> footer/footer-2
+  class="py-20 bg-black inverted"
+  }}
+
+
+  <script>
+    function initMap() {
+      var latlng = new google.maps.LatLng(40.702888, -74.012420);
+
+      var myOptions = {
+        zoom: 18,
+        center: latlng,
+        disableDefaultUI: true,
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ]
+      };
+
+      var map = new google.maps.Map(document.getElementById("map1"), myOptions);
+
+      map.panBy(-100, -40);
+
+      var myMarker = new google.maps.Marker(
+        {
+          position: latlng,
+          map: map,
+          icon: 'assets/images/svg/pin.svg'
+        });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAME5wJgLdn1aQSxC7-iWxJ3isuveK9Rv4&callback=initMap"
+    async defer></script>
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

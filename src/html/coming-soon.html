@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Coming Soon"}}
+</head>
+
+<body>
+
+  <!-- header -->
+  <section class="overflow-hidden inverted bg-black">
+    <div class="d-flex flex-column min-vh-100 container py-10 level-1">
+      <div class="row text-center">
+        <div class="col">
+          <a href="index.html" class="logo"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
+        </div>
+      </div>
+      <div class="row justify-content-center my-auto">
+        <div class="col-lg-8 col-xl-6 text-center">
+          <h1 class="display-1 lh-sm">Coming Soon
+          </h1>
+          <div class="countdown countdown-decorated" data-countdown=" Aug 31, 2021 21:03:00"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-xl-4 text-center">
+          <p class="text-secondary"><a href="" class="underline text-white fw-bold">Subscribe</a> and we'll let you know
+            once we
+            go live.</p>
+        </div>
+      </div>
+    </div>
+    <div class="background background-overlay" data-aos="zoom-out" data-aos-delay="200">
+      <video data-video playsinline autoplay muted loop>
+        <source src="./assets/video/video-3.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

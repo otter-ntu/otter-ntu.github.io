@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Lightbox - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="lightbox"}}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Lightbox</h1>
+              <p class="lead text-secondary">Lightweight & framework independent JavaScript image / video viewer
+              </p>
+              <a href="https://henrygd.me/bigpicture/" class="underline action">BigPicture Documentation <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+
+            <!-- image -->
+            <section>
+              <h3 class="fs-4">Image</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      {{> components/image
+                      link="/assets/images/small-1.jpg"
+                      class="media-image equal-md-1-1"
+                      lightbox="true"
+                      caption="Caption text goes here"
+                      }}
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    {{> components/image
+                      link="/assets/images/small-1.jpg"
+                      class="media-image equal-md-1-1"
+                      lightbox="true"
+                      caption="Caption text goes here"
+                      }}
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- video -->
+            <section>
+              <h3 class="fs-4">Video</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <figure class="media media-video equal-2-1" data-bp='{"ytSrc": "JFm7YDVlqnI"}'>
+                    <span style="background-image: url('../assets/images/small-4.jpg')">
+                    </span>
+                  </figure>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <figure class="media media-video equal-2-1" data-bp='{"ytSrc": "JFm7YDVlqnI"}'>
+                      <span style="background-image: url('../assets/images/small-4.jpg')">
+                      </span>
+                    </figure>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- gallery -->
+            <section>
+              <h3 class="fs-4">Gallery</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row g-3 gallery-1">
+                    <div class="col-md-6">
+                      {{> components/image
+                      link="/assets/images/small-1.jpg"
+                      class="media-image equal-md-1-1"
+                      lightbox="true"
+                      gallery="gallery-1"
+                      }}
+                    </div>
+                    <div class="col-md-6">
+                      {{> components/image
+                      link="/assets/images/small-2.jpg"
+                      class="media-image equal-md-1-1"
+                      lightbox="true"
+                      gallery="gallery-1"
+                      }}
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="row gallery-1">
+                      <div class="col-md-6">
+                        {{> components/image
+                        link="/assets/images/small-1.jpg"
+                        class="media-image equal-md-1-1"
+                        lightbox="true"
+                        gallery="gallery-1"
+                        }}
+                      </div>
+                      <div class="col-md-6">
+                        {{> components/image
+                        link="/assets/images/small-2.jpg"
+                        class="media-image equal-md-1-1"
+                        lightbox="true"
+                        gallery="gallery-1"
+                        }}
+                      </div>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

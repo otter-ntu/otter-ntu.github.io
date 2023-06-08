@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Dropdown - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="dropdowns"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Dropdowns</h1>
+              <p class="lead text-secondary">Toggle contextual overlays for displaying lists of links and more with the
+                Bootstrap dropdown plugin.</p>
+              <a href="https://getbootstrap.com/docs/5.0/components/dropdowns/" class="underline action">Bootstrap
+                documentation <i class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <!-- button -->
+            <section>
+              <h3 class="fs-4">Example</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="row g-1">
+                    <div class="col-auto">
+                      <div class="dropdown">
+                        <button class="btn btn-primary btn-with-icon rounded-pill" type="button"
+                          id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown">
+                        <button class="btn btn-primary btn-icon rounded-circle" type="button" id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="dropdown">
+                      <button class="btn btn-primary btn-with-icon rounded-pill" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button <i class="bi bi-chevron-down"></i>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="btn btn-primary btn-icon rounded-circle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- split button -->
+            <section>
+              <h3 class="fs-4">Multilevel Dropdown</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="dropdown">
+                    <button class="btn btn-primary rounded-pill btn-with-icon" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                      Dropdown button <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropend-1" data-bs-toggle="dropdown"
+                          aria-expanded="false" data-bs-auto-close="outside">Listing</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropend-1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another Action</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="dropdown">
+                      <button class="btn btn-primary rounded-pill btn-with-icon" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                        Dropdown button <i class="bi bi-chevron-down"></i>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li class="dropend">
+                          <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropend-1" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-auto-close="outside">Listing</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropend-1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another Action</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

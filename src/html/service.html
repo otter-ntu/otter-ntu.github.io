@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Service"}}
+</head>
+
+<style>
+  body {
+    --bs-primary: #1d4b40;
+  }
+</style>
+
+<body>
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-light.svg"
+  class="navbar-sticky navbar-dark"
+  active="service"
+  button="btn-outline-white"
+  }}
+
+
+  <!-- header -->
+  <section class="overflow-hidden bg-black" data-aos="fade-in">
+    <div class="d-flex flex-column py-20 container foreground min-vh-100">
+      <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
+        <div class="col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start">
+          <h1 class="lh-sm text-white mb-4">Best cleaning service in town.</h1>
+          <p class="lead text-secondary mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium
+            ipsa
+            reiciendis.
+            Dignissimos
+            veritatis unde doloribus quod soluta.</p>
+          <div class="d-inline-flex align-items-center mb-0">
+            <span class="fs-2 me-2 lh-1 fw-bold">4.9</span>
+            <ul class="rating text-yellow me-3 fs-5">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+          </div>
+          <small class="d-block text-muted">Based on 124 reviews.</small>
+        </div>
+        <div class="col-md-10 col-lg-6 col-xl-5" data-aos="fade-up">
+          <div class="card bg-opaque-black">
+            <div class="card-body bg-white">
+              <form action="#" class="row g-2">
+                <div class="col-lg-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput-1" placeholder="Your Name">
+                    <label for="floatingInput-1">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput-2" placeholder="Your Location">
+                    <label for="floatingInput-2">Your Location</label>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput-3" placeholder="name@example.com">
+                    <label for="floatingInput-3">Email address</label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Message</label>
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <a href="" class="btn btn-green btn-lg">Get in touch</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figure class="background background-overlay" style="background-image: url('./assets/images/service-1.jpg')"
+      data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
+  </section>
+
+
+
+  <!-- steps accordion -->
+  <section class="py-15 py-xl-20 overflow-hidden">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <h2>A digital studio creating experiences that amaze</h2>
+        </div>
+        <div class="col-lg-5">
+          <div class="accordion accordion-steps" id="accordion-steps" style="--bs-primary: #1d4b40;">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-steps-1">
+                <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-steps-1" aria-expanded="false" aria-controls="collapse-steps-1">
+                  You Call Us
+                </button>
+              </h2>
+              <div id="collapse-steps-1" class="accordion-collapse collapse" aria-labelledby="heading-steps-1"
+                data-bs-parent="#accordion-steps">
+                <div class="accordion-body">
+                  <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+                    voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
+                    assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-steps-2">
+                <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-steps-2" aria-expanded="false" aria-controls="collapse-steps-2">
+                  We Clean Your Space
+                </button>
+              </h2>
+              <div id="collapse-steps-2" class="accordion-collapse collapse" aria-labelledby="heading-steps-2"
+                data-bs-parent="#accordion-steps">
+                <div class="accordion-body">
+                  <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+                    voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
+                    assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-steps-3">
+                <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-steps-3" aria-expanded="false" aria-controls="collapse-steps-3">
+                  That's all!
+                </button>
+              </h2>
+              <div id="collapse-steps-3" class="accordion-collapse collapse" aria-labelledby="heading-steps-3"
+                data-bs-parent="#accordion-steps">
+                <div class="accordion-body">
+                  <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+                    voluptas. Quibusdam, quia. Accusantium, quo maxime est ullam at voluptas aspernatur. Iure
+                    assumenda labore esse vero ad. Deleniti ea totam dolorem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="py-15 py-xl-20 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-md-10 col-lg-6 mb-5 mb-lg-0">
+          <h2 class="lh-sm mb-5">We create beautiful, functional spaces</h2>
+          <div class="row g-2">
+            <div class="col-md-6">
+              <ul class="list-group list-group-minimal">
+                <li class="list-group-item d-flex align-items-center mb-1">
+                  <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+                  </div>
+                  Powerfull Tools
+                </li>
+                <li class="list-group-item d-flex align-items-center mb-1">
+                  <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+                  </div>
+                  Online Booking
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+                  </div>
+                  24/7 Availability
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group list-group-minimal">
+                <li class="list-group-item d-flex align-items-center mb-1">
+                  <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+                  </div>
+                  Quick delivery <span class="badge bg-green rounded-pill ms-2">New</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center mb-1">
+                  <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+                  </div>
+                  100% Guarantee
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                      class="bi bi-check2 text-green"></i>
+                  </div>
+                  Disscounts
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 col-lg-5 position-relative" data-aos='fade-up'>
+          <div class="equal-1-1 rounded-circle">
+            <figure class="background" style="background-image: url('./assets/images/service-2.jpg')"></figure>
+          </div>
+          <img class="position-absolute bottom-0 start-0 rotate" src="./assets/images/svg/featured.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pricing -->
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 mb-6">
+          <h2 class="fw-bold mb-1">Save money with our early booking program.</h2>
+        </div>
+      </div>
+      <div class="row g-3 g-xl-5 align-items-end">
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card bg-green inverted">
+            <div class="card-body">
+              <h2 class="h1 mb-4">$49</h2>
+              <p class="text-secondary fs-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus
+                quidem,
+                aut accusantium</p>
+              <ul class="list-unstyled mb-4">
+                <li class="py-1">6 Premium accounts</li>
+                <li class="py-1">Ad-free music listening</li>
+                <li class="py-1">Listen to music ad-free</li>
+              </ul>
+              <div class="d-grid">
+                <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                  class="btn btn-outline-white btn-lg btn-with-icon rounded-pill">Buy Now <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0 separated">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="h1 mb-4">$149</h2>
+                  <p class="text-secondary fs-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus
+                    quidem,
+                    aut accusantium</p>
+                  <ul class="list-unstyled mb-4">
+                    <li class="py-1">6 Premium accounts</li>
+                    <li class="py-1">Ad-free music listening</li>
+                    <li class="py-1">Listen to music ad-free</li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                      class="btn btn-outline-green btn-lg btn-with-icon rounded-pill">Buy Now <i
+                        class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="h1 mb-4">$449</h2>
+                  <p class="text-secondary fs-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus
+                    quidem,
+                    aut accusantium</p>
+                  <ul class="list-unstyled mb-4">
+                    <li class="py-1">6 Premium accounts</li>
+                    <li class="py-1">Ad-free music listening</li>
+                    <li class="py-1">Listen to music ad-free</li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                      class="btn btn-outline-green btn-lg btn-with-icon rounded-pill">Buy Now <i
+                        class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- testimonials -->
+  <section class="pb-15 pb-xl-20 overflow-hidden">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="carousel carousel-with-nav">
+            <div
+              data-carousel='{"controls": false, "autoHeight": true ,"gutter": 200, "center": true, "mouseDrag": true }'>
+              <div>
+                <blockquote class="text-center">
+                  <span class="logo"><img src="./assets/images/logo/logo-1.svg" alt="Logo"></span>
+                  <h4 class="fs-2 my-3">“Amazing experience I love it a lot. Thanks to the team
+                    that
+                    dreams come true.”</h4>
+                  <footer class="blockquote-footer">
+                    <span><span class="text-black">Michael Doe</span> Creative Director</span>
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div>
+                <blockquote class="text-center">
+                  <span class="logo"><img src="./assets/images/logo/logo-2.svg" alt="Logo"></span>
+                  <h4 class="fs-2 my-3">“Amazing experience I love it a lot. Thanks to the team
+                    that
+                    dreams come true.”</h4>
+                  <footer class="blockquote-footer">
+                    <span><span class="text-black">Michael Doe</span> Creative Director</span>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- split content -->
+  <section class="bg-green py-15 py-xl-20 mx-xl-3 overflow-hidden">
+    <div class="container level-3">
+      <div class="row">
+        <div class="col-lg-8 col-xl-6 inverted text-center text-lg-start">
+          <h2 class="h1 mb-0">Request your team of housekeepers now.</h2>
+          <p class="lead text-secondary my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            aspernatur
+            suscipit recusandae repellat libero repudiandae voluptate minima aliquid incidunt?</p>
+          <a href="" class="btn btn-outline-white btn-lg btn-with-icon rounded-pill">Book a visit <i
+              class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <figure class="background background-gradient-horizontal background-parallax"
+      style="background-image: url('./assets/images/service-3.jpg')" data-bottom-top="transform: translateY(0%);"
+      data-top-bottom="transform: translateY(20%);">
+    </figure>
+  </section>
+
+
+  <!-- logo list -->
+  <section class="py-15">
+    <div class="container">
+      <div class="carousel carousel-align text-center">
+        <div
+          data-carousel='{"gutter": 48, "loop": false, "nav": false, "controls": false, "responsive": {"0": {"items": 2}, "768": {"items": 4}, "1200": {"items": 5}}}'>
+          <div>
+            <img src="./assets/images/logo/logo-1.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-2.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-3.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-4.svg" alt="Logo" class="logo">
+          </div>
+          <div>
+            <img src="./assets/images/logo/logo-5.svg" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  {{> footer/footer-1
+  logo="/assets/images/logo/logo-dark.svg"
+  class="py-15 py-xl-20 border-top"
+  btnClass="btn-green"
+  }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

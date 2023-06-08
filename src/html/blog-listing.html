@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	{{> partials/head title="Blog"}}
+</head>
+
+<body>
+
+
+	<!-- navbar -->
+	{{> navbar/navbar
+	logo="/assets/images/logo/logo-dark.svg"
+	class="navbar-sticky navbar-light"
+	active="blog-listing"
+	button="btn-outline-light"
+	account="true"
+	}}
+
+
+	<section class="py-15 py-xl-20">
+		<div class="container mt-5 mt-xl-10">
+			<h1 class="mb-1">Marketing</h1>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Blog</a></li>
+					<li class="breadcrumb-item"><a href="#">Category</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Marketing</li>
+				</ol>
+			</nav>
+			<div class="row g-4 g-xl-5 justify-content-between mt-5">
+				<div class="col-md-6 col-lg-7">
+					<article class="card hover-arrow">
+						<a href="article.html"><img src="./assets/images/small-1.jpg" class="card-img-top"
+								alt="Image"></a>
+						<div class="card-body p-0 pe-lg-10 mt-2">
+							<a href="article.html" class="card-title">
+								<h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+							</a>
+							<time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+								2020</time>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+					<article class="card hover-arrow">
+						<a href="article.html"><img src="./assets/images/small-2.jpg" class="card-img-top"
+								alt="Image"></a>
+						<div class="card-body p-0 pe-lg-10 mt-2">
+							<a href="article.html" class="card-title">
+								<h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+							</a>
+							<time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+								2020</time>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-md-6 col-lg-6">
+					<article class="card hover-arrow">
+						<a href="article.html"><img src="./assets/images/small-3.jpg" class="card-img-top"
+								alt="Image"></a>
+						<div class="card-body p-0 pe-lg-10 mt-2">
+							<a href="article.html" class="card-title">
+								<h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+							</a>
+							<time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+								2020</time>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-md-6 col-lg-5">
+					<article class="card hover-arrow">
+						<a href="article.html"><img src="./assets/images/small-4.jpg" class="card-img-top"
+								alt="Image"></a>
+						<div class="card-body p-0 pe-lg-10 mt-2">
+							<a href="article.html" class="card-title">
+								<h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+							</a>
+							<time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+								2020</time>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-md-6 col-lg-5">
+					<article class="card hover-arrow">
+						<a href="article.html"><img src="./assets/images/small-5.jpg" class="card-img-top"
+								alt="Image"></a>
+						<div class="card-body p-0 pe-lg-10 mt-2">
+							<a href="article.html" class="card-title">
+								<h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+							</a>
+							<time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+								2020</time>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-md-6 col-lg-6">
+					<article class="card hover-arrow">
+						<a href="article.html"><img src="./assets/images/small-6.jpg" class="card-img-top"
+								alt="Image"></a>
+						<div class="card-body p-0 pe-lg-10 mt-2">
+							<a href="article.html" class="card-title">
+								<h5>How To Optimize Progressive Web Apps: Going Beyond The Basics</h5>
+							</a>
+							<time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18 December,
+								2020</time>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	{{> footer/footer-1
+	logo="/assets/images/logo/logo-light.svg"
+	class="py-15 py-xl-20 bg-black inverted"
+	btnClass="btn-primary"
+	}}
+
+	<!-- javascript -->
+	{{> partials/scripts}}
+</body>
+
+</html>

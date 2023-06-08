@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Buttons - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="buttons"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Buttons</h1>
+              <p class="lead text-secondary">Use Bootstrap’s custom button styles for actions in forms, dialogs, and
+                more with support for multiple sizes, states, and more.</p>
+              <a href="https://getbootstrap.com/docs/5.0/components/buttons/" class="underline action">Bootstrap
+                documentation <i class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <!-- sizes -->
+            <section>
+              <h3 class="fs-4">Sizes</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <button type="button" class="btn btn-lg btn-primary rounded-pill">Primary</button>
+                  <button type="button" class="btn btn-primary rounded-pill">Secondary</button>
+                  <button type="button" class="btn btn-sm btn-primary rounded-pill">Success</button>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <button type="button" class="btn btn-lg btn-primary rounded-pill">Primary</button>
+                    <button type="button" class="btn btn-primary rounded-pill">Secondary</button>
+                    <button type="button" class="btn btn-sm btn-primary rounded-pill">Success</button>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- styles -->
+            <section>
+              <h3 class="fs-4">Icon</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <button type="button" class="btn btn-primary btn-with-icon rounded-pill">Button With Icon <i
+                      class="bi bi-arrow-right"></i></button>
+                  <button type="button" class="btn btn-primary btn-icon rounded-circle"><i
+                      class="bi bi-check2"></i></button>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <button type="button" class="btn btn-primary btn-with-icon rounded-pill">Button With Icon <i
+                      class="bi bi-arrow-right"></i></button>
+                  <button type="button" class="btn btn-primary btn-icon rounded-circle"><i
+                      class="bi bi-check2"></i></button>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- example -->
+            <section>
+              <h3 class="fs-4">Colors</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <button type="button" class="btn btn-primary rounded-pill mb-1">Primary</button>
+                  <button type="button" class="btn btn-secondary rounded-pill mb-1">Secondary</button>
+                  <button type="button" class="btn btn-success rounded-pill mb-1">Success</button>
+                  <button type="button" class="btn btn-danger rounded-pill mb-1">Danger</button>
+                  <button type="button" class="btn btn-warning rounded-pill mb-1">Warning</button>
+                  <button type="button" class="btn btn-info rounded-pill mb-1">Info</button>
+                  <button type="button" class="btn btn-light rounded-pill mb-1">Light</button>
+                  <button type="button" class="btn btn-dark rounded-pill mb-1">Dark</button>
+
+                  <button type="button" class="btn btn-link">Link</button>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    
+                    <button type="button" class="btn btn-link">Link</button>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+            <!-- example -->
+            <section>
+              <h3 class="fs-4">Outline</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <button type="button" class="btn btn-outline-primary rounded-pill mb-1">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary rounded-pill mb-1">Secondary</button>
+                  <button type="button" class="btn btn-outline-success rounded-pill mb-1">Success</button>
+                  <button type="button" class="btn btn-outline-danger rounded-pill mb-1">Danger</button>
+                  <button type="button" class="btn btn-outline-warning rounded-pill mb-1">Warning</button>
+                  <button type="button" class="btn btn-outline-info rounded-pill mb-1">Info</button>
+                  <button type="button" class="btn btn-outline-light rounded-pill mb-1">Light</button>
+                  <button type="button" class="btn btn-outline-dark rounded-pill mb-1">Dark</button>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <button type="button" class="btn btn-outline-primary rounded-pill mb-1">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill mb-1">Secondary</button>
+                    <button type="button" class="btn btn-outline-success rounded-pill mb-1">Success</button>
+                    <button type="button" class="btn btn-outline-danger rounded-pill mb-1">Danger</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-1">Warning</button>
+                    <button type="button" class="btn btn-outline-info rounded-pill mb-1">Info</button>
+                    <button type="button" class="btn btn-outline-light rounded-pill mb-1">Light</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill mb-1">Dark</button>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

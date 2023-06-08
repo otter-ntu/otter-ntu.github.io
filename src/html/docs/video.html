@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Video - Documentation"}}
+</head>
+
+<body class="bg-light">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-dark.svg"
+  class="navbar-sticky navbar-light bg-light border-bottom"
+  active="components"
+  button="true"
+  }}
+
+
+  <div class="offcanvas-wrap">
+    <section class="split">
+      <div class="container">
+        <div class="row justify-content-between">
+
+
+
+          <div class="col-lg-3 split-sidebar">
+            <!-- table of contents-->
+            {{> components/toc
+            section="components"
+            active="video"
+            }}
+          </div>
+
+
+          <!-- content -->
+          <div class="col-lg-9 split-content">
+
+
+            <!-- text -->
+            <section class="pb-5 border-bottom">
+              <h1 class="mb-1">Video</h1>
+              <p class="lead text-secondary">Provides a high-performance wrapper to video sources from Youtube, Video
+                and self-serve MP4.</p>
+              <a href="https://plyr.io" class="underline action">Plyr Documentation <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </section>
+
+
+            <!-- local video -->
+            <section>
+              <h3 class="fs-4">Local Video</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <video playsinline controls data-video>
+                    <source src="../assets/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <video playsinline controls data-video>
+                      <source src="../assets/video/video.mp4" type="video/mp4" />
+                      <source src="../assets/video/video.webm" type="video/webm" />
+                    </video>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- youtube -->
+            <section>
+              <h3 class="fs-4">Youtube</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="plyr__video-embed" data-video>
+                    <iframe
+                      src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                      allowfullscreen allowtransparency allow="autoplay"></iframe>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="plyr__video-embed" data-video>
+                      <iframe
+                        src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                        allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+
+            <!-- vimeo -->
+            <section>
+              <h3 class="fs-4">Vimeo</h3>
+
+              <div class="card bg-opaque-white">
+                <div class="card-body bg-white">
+                  <div class="plyr__video-embed" data-video>
+                    <iframe
+                      src="https://player.vimeo.com/video/76979871?loop=false&byline=false&portrait=false&title=false&speed=true&transparent=0&gesture=media"
+                      allowfullscreen allowtransparency allow="autoplay"></iframe>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <script type="text/plain" class="language-html">
+                    <div class="plyr__video-embed" data-video>
+                      <iframe
+                        src="https://player.vimeo.com/video/76979871?loop=false&byline=false&portrait=false&title=false&speed=true&transparent=0&gesture=media"
+                        allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                  </script>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- table of contents - mobile-->
+  {{> components/toc-mobile }}
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

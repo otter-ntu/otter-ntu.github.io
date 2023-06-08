@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="Coworking"}}
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-light.svg"
+  class="navbar-sticky navbar-dark"
+  link="action underline text-white"
+  active="coworking"
+  button="btn-outline-white"
+  }}
+
+
+  <!-- hero -->
+  <section class="cover overflow-hidden bg-black inverted">
+    <div class="d-flex flex-column py-20 min-vh-100 container foreground">
+      <div class="row justify-content-center my-auto">
+        <div class="col-md-8 text-center">
+          <h1 class="fw-bold display-1">Work spaces you’ll fall in love with.</h1>
+          <a href="" class="btn btn-white rounded-pill">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="background background-overlay text-black" data-aos="zoom-out" data-aos-delay="200">
+      <video playsinline autoplay muted loop data-video>
+        <source src="./assets/video/video-3.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <span class="scroll-down"></span>
+  </section>
+
+
+  <!-- features -->
+  <section class="py-15 py-xl-20 overflow-hidden">
+    <div class="container">
+      <div class="row justify-content-center position-relative">
+        <div class="col-xl-10">
+          <p class="fs-4">Placeat sed, fugiat dolores
+            officiis
+            delectus
+            quidem labore ipsum cum error aperiam, repellat itaque suscipit mollitia, dolorum voluptatibus magnam
+            voluptas pariatur. Esse!</p>
+          <div class="row g-3 g-md-5 mt-4">
+            <div class="col-md-6 col-lg-4">
+              <span class="fs-2 lh-1 fw-bold">224ft</span>
+              <p class="d-block text-muted fs-lg mt-1"> <span class="text-black">Coworking space</span> dolor sit amet
+                consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <span class="fs-2 lh-1 fw-bold">300mb</span>
+              <p class="d-block text-muted fs-lg mt-1"><span class="text-black">Internet speed</span> sit amet
+                consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <span class="fs-2 lh-1 fw-bold">$14M</span>
+              <p class="d-block text-muted fs-lg mt-1"><span class="text-black">Startups rised</span> dolor sit amet
+                consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="overflow-hidden" data-aos="fade-left">
+    <div class="container gallery-1">
+      <div class="row flex-nowrap align-items-end g-2 g-xl-5 mb-2 mb-xl-5" data-bottom-top="transform: translateX(-25%)"
+        data-top-bottom="transform: translateX(-40%)">
+        <div class="col-6">
+          {{> components/image
+          link="/assets/images/coworking-1.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-6">
+          {{> components/image
+          link="/assets/images/coworking-2.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-6">
+          {{> components/image
+          link="/assets/images/coworking-3.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-6">
+          {{> components/image
+          link="/assets/images/coworking-4.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+      </div>
+      <div class="row flex-nowrap align-items-start g-2 g-xl-5" data-bottom-top="transform: translateX(-50%)"
+        data-top-bottom="transform: translateX(-35%)">
+        <div class="col-4">
+          {{> components/image
+          link="/assets/images/coworking-4.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-4">
+          {{> components/image
+          link="/assets/images/coworking-5.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-4">
+          {{> components/image
+          link="/assets/images/coworking-6.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-4">
+          {{> components/image
+          link="/assets/images/coworking-7.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+        <div class="col-4">
+          {{> components/image
+          link="/assets/images/coworking-8.jpg"
+          lightbox="true"
+          gallery="gallery-1"
+          class="equal equal-16-10 media-image"
+          }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- features -->
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row g-1 g-lg-2">
+        <h2 class="mb-5">Facilities you'll fall in love with.</h2>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-geo-alt-fill fs-5 text-primary"></i>
+            </div>
+            5th Avenue, New York
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-clock-fill fs-5 text-primary"></i>
+            </div>
+            24/7 availability
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-bar-chart-fill fs-5 text-primary"></i>
+            </div>
+            high speed internet connection
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-people-fill fs-5 text-primary"></i>
+            </div>
+            100 members
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-brightness-high-fill fs-5 text-primary"></i>
+            </div> eye friendly ambient light
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-badge-8k-fill fs-5 text-primary"></i>
+            </div> high resolution tv
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-headset fs-5 text-primary"></i>
+            </div> free headset available
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center border rounded-pill pe-4">
+            <div class="icon-box icon-box-lg bg-opaque-primary rounded-circle me-2">
+              <i class="bi bi-chat-quote-fill fs-5 text-primary"></i>
+            </div> amazing networking
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-15 py-xl-20 bg-black overflow-hidden mx-xl-3">
+    <div class="level-1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-white text-center">
+            <h2 class="fw-light mb-5"><span class="fw-bold">75% freelancers</span> prefer working from coworking over
+              working
+              from home.</h2>
+            <a href="" class="btn btn-outline-white rounded-pill">Reserve desk now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figure class="background background-overlay" style="background-image: url('./assets/images/coworking-2.jpg')"
+      data-bottom-top="transform: scale(1);" data-top-bottom="transform: scale(1.1);"></figure>
+  </section>
+
+
+  <!-- events -->
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row g-3 g-xl-5 mb-5">
+        <div class="col-lg-6">
+          <h2>Upcoming events.</h2>
+        </div>
+      </div>
+      <div class="row g-3 g-xl-5">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <a href="" class="card border card-arrow">
+            <div class="card-header">
+              <span class="badge bg-opaque-primary text-primary mb-3 rounded-pill">28 Aug</span>
+              <h3 class="card-title">Everything you should know about Design Systems</h3>
+            </div>
+            <div class="card-footer">
+              <div class="d-flex align-items-center">
+                <span class="avatar">
+                  <img src="../assets/images/users/user-1.jpg" class="rounded-circle" alt="Avatar">
+                </span>
+                <div class="ms-2">
+                  <p class="mb-0 lh-1">Michael Doe</p>
+                  <small class="text-secondary">Creative Lead</small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="" class="card border card-arrow">
+            <div class="card-header">
+              <span class="badge bg-opaque-primary text-primary mb-3 rounded-pill">28 Aug</span>
+              <h3 class="card-title">Everything you should know about Design Systems</h3>
+            </div>
+            <div class="card-footer">
+              <div class="d-flex align-items-center">
+                <span class="avatar">
+                  <img src="../assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                </span>
+                <div class="ms-2">
+                  <p class="mb-0 lh-1">Michael Doe</p>
+                  <small class="text-secondary">Creative Lead</small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="" class="card border card-arrow">
+            <div class="card-header">
+              <span class="badge bg-opaque-primary text-primary mb-3 rounded-pill">28 Aug</span>
+              <h3 class="card-title">Everything you should know about Design Systems</h3>
+            </div>
+            <div class="card-footer">
+              <div class="d-flex align-items-center">
+                <span class="avatar">
+                  <img src="../assets/images/users/user-3.jpg" class="rounded-circle" alt="Avatar">
+                </span>
+                <div class="ms-2">
+                  <p class="mb-0 lh-1">Michael Doe</p>
+                  <small class="text-secondary">Creative Lead</small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- accordion -->
+  <section class="py-15 py-xl-20 bg-black inverted">
+    <div class="container foreground">
+      <div class="row">
+        <div class="col">
+          <div class="accordion accordion-minimal accordion-highlight" id="accordion-2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2-1">
+                <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2-1" aria-expanded="true" aria-controls="collapse-2-1">
+                  New York, USA
+                </button>
+              </h2>
+              <div id="collapse-2-1" class="accordion-collapse collapse show" aria-labelledby="heading-2-1"
+                data-bs-parent="#accordion-2">
+                <div class="accordion-body">
+                  <div class="row align-items-center justify-content-lg-between">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                      <p class="lead text-white mb-xl-4">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                        non explicabo nulla? Ex, odit vel dicta laudantium, fugiat porro fuga distinctio voluptatibus
+                        officia hic voluptates, temporibus adipisci tempora et cum.</p>
+                      <ul class="list-unstyled text-secondary">
+                        <li>
+                          <p>contact@webuildthemes.com</p>
+                        </li>
+                        <li>
+                          <p>5th Avenue, New York 10001</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 position-relative">
+                      <div class="media equal equal-2-1">
+                        <span id="map1"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-8">
+              <h2 class="accordion-header" id="heading-2-2">
+                <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
+                  London, UK
+                </button>
+              </h2>
+              <div id="collapse-2-2" class="accordion-collapse collapse" aria-labelledby="heading-2-2"
+                data-bs-parent="#accordion-2">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam aut quod culpa fugit
+                    voluptatibus sunt, obcaecati eveniet impedit eligendi voluptatem reiciendis cum consequatur sit quia
+                    mollitia. Nam, tempora tempore!</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-8">
+              <h2 class="accordion-header" id="heading-2-3">
+                <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
+                  Stockholm, Sweden
+                </button>
+              </h2>
+              <div id="collapse-2-3" class="accordion-collapse collapse" aria-labelledby="heading-2-3"
+                data-bs-parent="#accordion-2">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ullam soluta ipsam, commodi atque
+                    tempore debitis quaerat molestias neque aperiam, doloribus vero? Suscipit et dignissimos minus, vel
+                    distinctio odit. Earum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- pricing -->
+  <section class="py-15 py-xl-20">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center mb-8">
+          <span class="badge bg-opaque-primary text-primary mb-2 rounded-pill">Pricing Plans</span>
+          <h2 class="fw-bold">Get started with CUBE</h2>
+          <p class="text-secondary">Incidunt sunt optio aspernatur provident molestias! Vero quidem nihil temporibus,
+            assumenda dolor voluptates dolorem tempore voluptas, reprehenderit velit eius ullam error esse.</p>
+        </div>
+      </div>
+      <div class="row g-3 g-xl-5 align-items-end">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card border border-primary text-center">
+            <div class="card-body bg-primary inverted">
+              <span class="fs-lg text-white">One Day</span>
+              <h2 class="h1 my-2">$9</h2>
+              <p class="text-secondary fs-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="d-grid mt-5">
+                <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                  class="btn btn-white btn-lg rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border text-center">
+            <div class="card-body">
+              <span class="fs-lg text-primary">Open Area</span>
+              <h2 class="h1 my-2">$39</h2>
+              <p class="text-secondary fs-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="d-grid mt-5">
+                <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                  class="btn btn-outline-primary btn-lg rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card border text-center">
+            <div class="card-body">
+              <span class="fs-lg text-primary">Office</span>
+              <h2 class="h1 my-2">$129</h2>
+              <p class="text-secondary fs-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="d-grid mt-5">
+                <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
+                  class="btn btn-outline-primary btn-lg rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  {{> footer/footer-2
+  class="py-20 bg-black inverted"
+  }}
+
+  <script>
+    function initMap() {
+      var latlng = new google.maps.LatLng(40.702888, -74.012420);
+
+      var myOptions = {
+        zoom: 15,
+        center: latlng,
+        disableDefaultUI: true,
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ]
+      };
+
+      var map = new google.maps.Map(document.getElementById("map1"), myOptions);
+
+      map.panBy(-100, -40);
+
+      var myMarker = new google.maps.Marker(
+        {
+          position: latlng,
+          map: map,
+          icon: 'assets/images/svg/pin.svg'
+        });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAME5wJgLdn1aQSxC7-iWxJ3isuveK9Rv4&callback=initMap"
+    async defer></script>
+
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

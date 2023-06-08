@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" /> -->
+  
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/index.bundle.css" />
+  
+  <!-- Title -->
+  <title>Agency</title></head>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
+  
+      <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+        <li class="nav-item">
+          <a class="nav-link nav-icon" data-bs-toggle="offcanvas" href="#offcanvasNav" role="button"
+            aria-controls="offcanvasNav">
+            <span class="bi bi-list"></span>
+          </a>
+        </li>
+      </ul>
+  
+      <!-- mobile user menu -->
+    </div>
+  </nav>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav nav-minimal" id="toc-nav">
+        <li class="nav-item">
+          <a class="nav-link fs-4" href="#menu-1" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="menu-1">Landings</a>
+          <div class="collapse" id="menu-1" data-bs-parent="#toc-nav">
+            <ul class="nav nav-minimal nav-minimal-columns">
+              <li class="nav-item">
+                <a class="nav-link " href="./startup.html">Startup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./saas.html">Saas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./coworking.html">Coworking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./job-listing.html">Job
+                  Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./agency.html">Agency</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./app.html">App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./event.html">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./course.html">Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./service.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./software.html">Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4" href="#menu-2" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="menu-2">Pages</a>
+          <div class="collapse" id="menu-2" data-bs-parent="#toc-nav">
+            <ul class="nav nav-minimal nav-minimal-columns">
+              <li class="nav-item">
+                <span class="nav-label">Company</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./terms.html">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./job-listing.html">Job
+                  Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./job-post.html">Job
+                  Post</a>
+              </li>
+  
+              <li class="nav-item">
+                <span class="nav-label">Portfolio</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./portfolio-grid.html">Grid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./portfolio-list.html">List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./case-study.html">Case
+                  Study</a>
+              </li>
+  
+              <li class="nav-item">
+                <span class="nav-label">Blog</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./blog-listing.html">Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./blog-post.html">Post</a>
+              </li>
+  
+              <li class="nav-item">
+                <span class="nav-label">Contact</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./contact.html">Classic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./contact-location.html">Location</a>
+              </li>
+  
+              <li class="nav-item">
+                <span class="nav-label">Utilities</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./404.html">404</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./coming-soon.html">Coming Soon</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4" href="#menu-3" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="menu-3">Account</a>
+          <div class="collapse" id="menu-3" data-bs-parent="#toc-nav">
+            <ul class="nav nav-minimal nav-minimal-columns">
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./account.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./account-settings.html">Settings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./account-orders.html">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./account-billing.html">Billing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./sign-in.html">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./forgot-password.html">Forgot Password</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4" href="#menu-4" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="menu-4">Shop</a>
+          <div class="collapse" id="menu-4" data-bs-parent="#toc-nav">
+            <ul class="nav nav-minimal nav-minimal-columns">
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./shop-product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./shop-listing.html">Listing Full</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./shop-listing-sidebar.html">Listing Sidebar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./shop-cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./shop-checkout.html">Checkout</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4" href="#menu-5" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="menu-5">Docs</a>
+          <div class="collapse" id="menu-5" data-bs-parent="#toc-nav">
+            <ul class="nav nav-minimal nav-minimal-columns">
+              <li class="nav-item">
+                <a class="nav-link " href="./docs/index.html">Get
+                  Started</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="./docs/accordion.html">Components</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas-footer">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="" class="text-muted text-primary-hover"><i
+              class="bi bi-facebook fs-lg"></i></a></li>
+        <li class="list-inline-item ms-1"><a href="" class="text-muted text-primary-hover"><i
+              class="bi bi-twitter fs-lg"></i></a></li>
+        <li class="list-inline-item ms-1"><a href="" class="text-muted text-primary-hover"><i
+              class="bi bi-linkedin fs-lg"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+
+
+  <div class="offcanvas-wrap">
+
+    <!-- header -->
+    <section class="inverted overflow-hidden position-relative" data-top-top="background-color: rgba(44,73,244,1)"
+      data-top-center="background-color: rgba(235,60,39,1)" data-top-bottom="background-color: rgba(44,73,244,1)">
+      <div class="container d-flex flex-column foreground min-vh-100">
+        <div class="row align-items-center justify-content-center my-auto">
+          <div class="col-lg-10 text-center">
+            <span class="eyebrow text-secondary mb-2">UX and Full stack development studio</span>
+            <h1 class="display-1 fw-bold">Where Design Meet Functionality.</h1>
+            <a href="" class="btn btn-white rounded-pill">Start a project</a>
+          </div>
+        </div>
+      </div>
+      <figure class="background">
+        <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle data-aos="fade-up" data-aos-delay="150" cx="125%" cy="-25%" r="35%" fill="white" fill-opacity=".05"
+            data-top-top="@cy: -25%; @cx: 115%;" data-top-bottom="@cy: 0%; @cx: 105%;" />
+          <circle data-aos="fade-up" data-aos-delay="300" cx="90%" cy="125%" r="75%" fill="black" fill-opacity=".1"
+            data-center-top="@r: 75%;" data-top-bottom="@r: 85%;" />
+          <circle data-aos="fade-up" data-aos-delay="450" cx="5%" cy="125%" r="50%" stroke="black" stroke-opacity=".2"
+            data-center-top="@r: 50%;" data-center-bottom="@r: 70%;" />
+        </svg>
+      </figure>
+      <span class="scroll-down"></span>
+    </section>
+
+
+    <!-- features -->
+    <section class="py-15 py-xl-20">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <h2 class="fw-bold">A digital studio creating experiences that work.</h2>
+          </div>
+        </div>
+        <div class="row g-4 g-md-5">
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold">Brand</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="py-1">Brand Strategy</li>
+              <li class="py-1">Visual Identity</li>
+              <li class="py-1">Rebranding</li>
+              <li class="py-1">Research & Analytics</li>
+            </ul>
+            <a href="" class="underline eyebrow">Order service</a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold">Content</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="py-1">Copywriting</li>
+              <li class="py-1">Motion Graphics</li>
+              <li class="py-1">Illustrations</li>
+              <li class="py-1">Photo & Video</li>
+            </ul>
+            <a href="" class="underline eyebrow">Order service</a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold">Solutions</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="py-1">Web Design</li>
+              <li class="py-1">Web Development</li>
+              <li class="py-1">Web Application</li>
+              <li class="py-1">Ecommerce</li>
+            </ul>
+            <a href="" class="underline eyebrow">Order service</a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold">Connections</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="py-1">Digital marketing strategies</li>
+              <li class="py-1">SEO/SEA</li>
+              <li class="py-1">Social Media</li>
+              <li class="py-1">E-mail marketing</li>
+            </ul>
+            <a href="" class="underline eyebrow">Order service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- projects -->
+    <section class="py-15 py-xl-20 bg-light">
+      <div class="container">
+        <div class="row g-2 justify-content-between mb-8">
+          <div class="col-lg-7">
+            <h2 class="fs-1 fw-bold">We bring your idea and work for it to became reality.</h2>
+          </div>
+          <div class="col-md-8 col-lg-4">
+            <blockquote class="blockquote mt-1">
+              <p class="fs-6">Build better websites. A new template inspired by the world’s best design
+                practices.
+              </p>
+              <footer class="blockquote-footer mt-3">
+                <small class="d-block lh-1 text-black">Michael Campbell</small>
+                <small>Google CEO</small>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="row g-2 mb-8" data-masonry>
+          <div class="col-md-6" data-aos="fade-up">
+            <a href="" class="card equal-md-1-1 card-arrow card-hover-gradient card-hover-arrow inverted">
+              <figure class="background" style="background-image: url('./assets/images/small-1.jpg')">
+              </figure>
+              <div class="card-wrap">
+                <div class="card-footer mt-auto text-shadow">
+                  <time datetime="2020-12-18 20:00" class="eyebrow text-secondary">18 December</time>
+                  <h5 class="card-title mt-1">Ethical Considerations In UX Research: The Need For Training And Review
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <a href="" class="card equal-md-3-4 card-arrow card-hover-gradient card-hover-arrow inverted">
+              <figure class="background" style="background-image: url('./assets/images/small-2.jpg')">
+              </figure>
+              <div class="card-wrap">
+                <div class="card-footer mt-auto text-shadow">
+                  <time datetime="2020-12-18 20:00" class="eyebrow text-secondary">18 December</time>
+                  <h5 class="card-title mt-1">Ethical Considerations In UX Research: The Need For Training And Review
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <a href="" class="card equal-md-3-4 card-arrow card-hover-gradient card-hover-arrow inverted">
+              <figure class="background" style="background-image: url('./assets/images/small-3.jpg')">
+              </figure>
+              <div class="card-wrap">
+                <div class="card-footer mt-auto text-shadow">
+                  <time datetime="2020-12-18 20:00" class="eyebrow text-secondary">18 December</time>
+                  <h5 class="card-title mt-1">Ethical Considerations In UX Research: The Need For Training And Review
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <a href="" class="card equal-md-1-1 card-arrow card-hover-gradient card-hover-arrow inverted">
+              <figure class="background" style="background-image: url('./assets/images/small-4.jpg')">
+              </figure>
+              <div class="card-wrap">
+                <div class="card-footer mt-auto text-shadow">
+                  <time datetime="2020-12-18 20:00" class="eyebrow text-secondary">18 December</time>
+                  <h5 class="card-title mt-1">Ethical Considerations In UX Research: The Need For Training And Review
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="" class="btn btn-outline-primary btn-with-icon rounded-pill">
+              <i class="bi bi-arrow-repeat"></i> Load More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- team -->
+    <section class="py-15 py-xl-20 bg-black inverted">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Meet the people behind our project.</h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="" class="action underline text-white">View all 28 members<i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="row g-2 g-lg-5">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="" class="card card-hover-gradient inverted equal-1-1 equal-lg-3-4">
+              <div class="card-wrap">
+                <div class="card-footer text-shadow mt-auto">
+                  <h5 class="mb-0">John Doe</h5>
+                  <span class="text-muted">Senior Product Designer</span>
+                </div>
+              </div>
+              <figure class="background" style="background-image: url('./assets/images/users/user-1.jpg')">
+              </figure>
+            </a>          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+            <a href="" class="card card-hover-gradient inverted equal-1-1 equal-lg-3-4">
+              <div class="card-wrap">
+                <div class="card-footer text-shadow mt-auto">
+                  <h5 class="mb-0">John Doe</h5>
+                  <span class="text-muted">Senior Product Designer</span>
+                </div>
+              </div>
+              <figure class="background" style="background-image: url('./assets/images/users/user-2.jpg')">
+              </figure>
+            </a>          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="" class="card card-hover-gradient inverted equal-1-1 equal-lg-3-4">
+              <div class="card-wrap">
+                <div class="card-footer text-shadow mt-auto">
+                  <h5 class="mb-0">John Doe</h5>
+                  <span class="text-muted">Senior Product Designer</span>
+                </div>
+              </div>
+              <figure class="background" style="background-image: url('./assets/images/users/user-3.jpg')">
+              </figure>
+            </a>          </div>
+          <div class="d-none d-md-block d-lg-none col-md-6 col-lg-4">
+            <a href="" class="card card-hover-gradient inverted equal-1-1 equal-lg-3-4">
+              <div class="card-wrap">
+                <div class="card-footer text-shadow mt-auto">
+                  <h5 class="mb-0">John Doe</h5>
+                  <span class="text-muted">Senior Product Designer</span>
+                </div>
+              </div>
+              <figure class="background" style="background-image: url('./assets/images/users/user-4.jpg')">
+              </figure>
+            </a>          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- testimonials -->
+    <section class="py-15 py-xl-20 overflow-hidden">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="carousel carousel-with-nav">
+              <div
+                data-carousel='{"controls": false, "autoHeight": true ,"gutter": 200, "center": true, "mouseDrag": true }'>
+                <div>
+                  <blockquote class="text-center">
+                    <span class="logo"><img src="./assets/images/logo/logo-1.svg" alt="Logo"></span>
+                    <h4 class="fs-2 my-3">“Amazing experience I love it a lot. Thanks to the team
+                      that
+                      dreams come true.”</h4>
+                    <footer class="blockquote-footer">
+                      <span><span class="text-black">Michael Doe</span> Creative Director</span>
+                    </footer>
+                  </blockquote>
+                </div>
+
+                <div>
+                  <blockquote class="text-center">
+                    <span class="logo"><img src="./assets/images/logo/logo-2.svg" alt="Logo"></span>
+                    <h4 class="fs-2 my-3">“Amazing experience I love it a lot. Thanks to the team
+                      that
+                      dreams come true.”</h4>
+                    <footer class="blockquote-footer">
+                      <span><span class="text-black">Michael Doe</span> Creative Director</span>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- instagram -->
+    <section class="py-0">
+      <div class="container">
+        <div class="row g-0 gallery-1">
+          <div class="col-lg-3">
+            <a href="" class="card card-arrow card-hover-arrow equal-lg-1-1 text-white bg-black">
+              <div class="card-wrap">
+                <div class="card-header pb-0">
+                  <i class="bi bi-instagram fs-3"></i>
+                </div>
+                <div class="card-footer mt-auto">
+                  <h5 class="fs-lg">@webuildthemes</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-6 col-md-3">
+            <figure class="media media-image equal-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-1.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-1.jpg')">
+              </span>
+            </figure>          </div>
+          <div class="col-6 col-md-3">
+            <figure class="media media-image equal-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-2.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-2.jpg')">
+              </span>
+            </figure>          </div>
+          <div class="col-6 col-md-3">
+            <figure class="media media-image equal-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-3.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-3.jpg')">
+              </span>
+            </figure>          </div>
+          <div class="col-6 col-md-3">
+            <figure class="media media-image equal-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-4.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-4.jpg')">
+              </span>
+            </figure>          </div>
+          <div class="col-6 col-md-3">
+            <figure class="media media-image equal-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-5.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-5.jpg')">
+              </span>
+            </figure>          </div>
+          <div class="col-6 col-md-3">
+            <figure class="media media-image equal-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-6.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-6.jpg')">
+              </span>
+            </figure>          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <figure class="media media-image equal-2-1 equal-lg-1-1" 
+              data-bp='{"imgSrc": "./assets/images/insta-7.jpg" , "parentGalleryClass": "gallery-1" }' >
+              <span  style="background-image: url('./assets/images/insta-7.jpg')">
+              </span>
+            </figure>          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="py-15 py-xl-20">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mb-5">
+            <h2 class="fw-bold">Let's make something big. <span class="d-block">Together.</span></h2>
+          </div>
+          <div class="col-lg-8">
+            <form action="#" class="row g-3">
+              <div class="col-md-6">
+                <label for="yourName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="yourName" placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <label for="yourCompany" class="form-label">Your Company</label>
+                <input type="text" class="form-control" id="yourCompany" placeholder="Your Company">
+              </div>
+              <div class="col-md-12">
+                <label for="yourMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="yourMessage" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="col-md-8">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label text-muted small" for="gridCheck">
+                    I accept the <a href="" class="underline">Terms
+                      & Conditions</a> and acknowledge that my information will be used in accordance with Privacy
+                    Policy.
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <a href="" class="btn btn-block btn-primary rounded-pill">Get in touch</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="py-15 py-xl-20 bg-black inverted">
+      <div class="container">
+        <div class="row g-2 g-lg-6 mb-8">
+          <div class="col-lg-6">
+            <h4>5th Avenue, New York <br>USA 10255</h4>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <span class="h5">+1 (234) 567 890</span>
+          </div>
+        </div>
+        <div class="row mb-8">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+        <div class="row g-0 g-lg-6 text-secondary">
+          <div class="col-lg-6 text-lg-end order-lg-2">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="" class="text-reset">facebook</a></li>
+              <li class="list-inline-item ms-1"><a href="" class="text-reset">twitter</a></li>
+              <li class="list-inline-item ms-1"><a href="" class="text-reset">linkedin</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <p>Copyrights © 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- javascript -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+  <script src="./assets/js/index.bundle.js"></script></body>
+
+</html>

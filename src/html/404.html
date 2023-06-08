@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> partials/head title="404"}}
+</head>
+
+<body class="bg-red">
+
+
+  <!-- navbar -->
+  {{> navbar/navbar
+  logo="/assets/images/logo/logo-light.svg"
+  class="navbar-sticky navbar-dark"
+  active="404"
+  button="btn-outline-white"
+  }}
+
+
+  <!-- hero -->
+  <section class="inverted">
+    <div class="d-flex flex-column container min-vh-100 py-20">
+      <div class="row align-items-center justify-content-center justify-content-lg-between my-auto">
+        <div class="col-lg-6 order-lg-2">
+          <img class="img-fluid" src="./assets/images/svg/404.svg" alt="Figure">
+        </div>
+        <div class="col-md-8 col-lg-5 order-lg-1 text-center text-lg-start">
+          <h1 class="display-2">Sorry, page not found.</h1>
+          <a href="index.html" class="btn btn-rounded btn-outline-white rounded-pill">Go back to homepage</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- javascript -->
+  {{> partials/scripts}}
+</body>
+
+</html>

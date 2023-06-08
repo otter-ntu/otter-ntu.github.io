@@ -1,0 +1,11 @@
+<div class="product">
+  <figure class="product-image">
+    <a href="#!">
+      {{#each image}}
+      <img src="{{this}}" alt="Image" />
+      {{/each}}
+    </a>
+  </figure>
+  <a class="product-title" href="#!">{{title}}</a>
+  <span class="product-price">{{price}} {{#if discount}}<s class="text-muted">{{discount}}</s>{{/if}}</span>
+</div>
